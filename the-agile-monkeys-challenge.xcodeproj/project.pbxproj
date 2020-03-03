@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-agile-monkeys-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agile Monkeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35E240EF2F50062ADE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		F4F4D358240EF2F50062ADE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */,
+				F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */,
 				F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */,
 				F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */,
 			);
@@ -145,7 +145,7 @@
 			);
 			name = "the-agile-monkeys-challenge";
 			productName = "the-agile-monkeys-challenge";
-			productReference = F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */;
+			productReference = F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F4F4D36C240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
@@ -442,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Agile Monkeys";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Agile Monkeys";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -484,7 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-agile-monkeys-challenge.app/the-agile-monkeys-challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Agile Monkeys.app/Agile Monkeys";
 			};
 			name = Debug;
 		};
@@ -506,7 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-agile-monkeys-challenge.app/the-agile-monkeys-challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Agile Monkeys.app/Agile Monkeys";
 			};
 			name = Release;
 		};

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import the_agile_monkeys_challenge
+@testable import Agile_Monkeys
 
 class the_agile_monkeys_challengeTests: XCTestCase {
 
