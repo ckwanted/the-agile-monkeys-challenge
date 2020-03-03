@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */; };
+		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
+		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
+		F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBB5240F103D0049B5C3 /* UserCase.swift */; };
 		F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */; };
 		F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */; };
-		F4F4D35F240EF2F50062ADE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35E240EF2F50062ADE3 /* ViewController.swift */; };
-		F4F4D362240EF2F50062ADE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D360240EF2F50062ADE3 /* Main.storyboard */; };
 		F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D363240EF2F60062ADE3 /* Assets.xcassets */; };
 		F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */; };
-		F4F4D372240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */; };
-		F4F4D37D240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */; };
+		F4F4D372240EF2F60062ADE3 /* AgileMonkeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */; };
+		F4F4D37D240EF2F60062ADE3 /* AgileMonkeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D37C240EF2F60062ADE3 /* AgileMonkeyUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +37,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
+		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
+		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F44AEBB5240F103D0049B5C3 /* UserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCase.swift; sourceTree = "<group>"; };
 		F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agile Monkeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4F4D35E240EF2F50062ADE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4F4D361240EF2F50062ADE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F4D363240EF2F60062ADE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4F4D366240EF2F60062ADE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4F4D368240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-agile-monkeys-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_agile_monkeys_challengeTests.swift; sourceTree = "<group>"; };
+		F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileMonkeysTests.swift; sourceTree = "<group>"; };
 		F4F4D373240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-agile-monkeys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_agile_monkeys_challengeUITests.swift; sourceTree = "<group>"; };
+		F4F4D37C240EF2F60062ADE3 /* AgileMonkeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileMonkeyUITests.swift; sourceTree = "<group>"; };
 		F4F4D37E240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44AEBA5240EFFB30049B5C3 /* User Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F44AEBA6240EFFCA0049B5C3 /* Fake Splash */,
+				F44AEBB5240F103D0049B5C3 /* UserCase.swift */,
+			);
+			path = "User Cases";
+			sourceTree = "<group>";
+		};
+		F44AEBA6240EFFCA0049B5C3 /* Fake Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */,
+				F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */,
+			);
+			path = "Fake Splash";
+			sourceTree = "<group>";
+		};
+		F44AEBAE240F08A50049B5C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F44AEBAF240F08B60049B5C3 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F4F4D34E240EF2F50062ADE3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +131,8 @@
 			children = (
 				F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */,
 				F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */,
-				F4F4D35E240EF2F50062ADE3 /* ViewController.swift */,
-				F4F4D360240EF2F50062ADE3 /* Main.storyboard */,
+				F44AEBAE240F08A50049B5C3 /* Extensions */,
+				F44AEBA5240EFFB30049B5C3 /* User Cases */,
 				F4F4D363240EF2F60062ADE3 /* Assets.xcassets */,
 				F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */,
 				F4F4D368240EF2F60062ADE3 /* Info.plist */,
@@ -113,7 +143,7 @@
 		F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */,
+				F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */,
 				F4F4D373240EF2F60062ADE3 /* Info.plist */,
 			);
 			path = "the-agile-monkeys-challengeTests";
@@ -122,7 +152,7 @@
 		F4F4D37B240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */,
+				F4F4D37C240EF2F60062ADE3 /* AgileMonkeyUITests.swift */,
 				F4F4D37E240EF2F60062ADE3 /* Info.plist */,
 			);
 			path = "the-agile-monkeys-challengeUITests";
@@ -233,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */,
+				F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */,
 				F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */,
-				F4F4D362240EF2F50062ADE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F4D35F240EF2F50062ADE3 /* ViewController.swift in Sources */,
+				F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */,
+				F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */,
 				F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */,
+				F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */,
 				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F4D372240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift in Sources */,
+				F4F4D372240EF2F60062ADE3 /* AgileMonkeysTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F4D37D240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift in Sources */,
+				F4F4D37D240EF2F60062ADE3 /* AgileMonkeyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4F4D360240EF2F50062ADE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4F4D361240EF2F50062ADE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
