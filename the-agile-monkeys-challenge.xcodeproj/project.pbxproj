@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */; };
+		F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */; };
+		F4F4D35F240EF2F50062ADE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35E240EF2F50062ADE3 /* ViewController.swift */; };
+		F4F4D362240EF2F50062ADE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D360240EF2F50062ADE3 /* Main.storyboard */; };
+		F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D363240EF2F60062ADE3 /* Assets.xcassets */; };
+		F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */; };
+		F4F4D372240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */; };
+		F4F4D37D240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4F4D36E240EF2F60062ADE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4F4D34F240EF2F50062ADE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4F4D356240EF2F50062ADE3;
+			remoteInfo = "the-agile-monkeys-challenge";
+		};
+		F4F4D379240EF2F60062ADE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4F4D34F240EF2F50062ADE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4F4D356240EF2F50062ADE3;
+			remoteInfo = "the-agile-monkeys-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-agile-monkeys-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4F4D35E240EF2F50062ADE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4F4D361240EF2F50062ADE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4F4D363240EF2F60062ADE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4F4D366240EF2F60062ADE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4F4D368240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-agile-monkeys-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_agile_monkeys_challengeTests.swift; sourceTree = "<group>"; };
+		F4F4D373240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-agile-monkeys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_agile_monkeys_challengeUITests.swift; sourceTree = "<group>"; };
+		F4F4D37E240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4F4D354240EF2F50062ADE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4D36A240EF2F60062ADE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4D375240EF2F60062ADE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4F4D34E240EF2F50062ADE3 = {
+			isa = PBXGroup;
+			children = (
+				F4F4D359240EF2F50062ADE3 /* the-agile-monkeys-challenge */,
+				F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */,
+				F4F4D37B240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */,
+				F4F4D358240EF2F50062ADE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4F4D358240EF2F50062ADE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */,
+				F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */,
+				F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4F4D359240EF2F50062ADE3 /* the-agile-monkeys-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */,
+				F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */,
+				F4F4D35E240EF2F50062ADE3 /* ViewController.swift */,
+				F4F4D360240EF2F50062ADE3 /* Main.storyboard */,
+				F4F4D363240EF2F60062ADE3 /* Assets.xcassets */,
+				F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */,
+				F4F4D368240EF2F60062ADE3 /* Info.plist */,
+			);
+			path = "the-agile-monkeys-challenge";
+			sourceTree = "<group>";
+		};
+		F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */,
+				F4F4D373240EF2F60062ADE3 /* Info.plist */,
+			);
+			path = "the-agile-monkeys-challengeTests";
+			sourceTree = "<group>";
+		};
+		F4F4D37B240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */,
+				F4F4D37E240EF2F60062ADE3 /* Info.plist */,
+			);
+			path = "the-agile-monkeys-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4F4D356240EF2F50062ADE3 /* the-agile-monkeys-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F4D381240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challenge" */;
+			buildPhases = (
+				F4F4D353240EF2F50062ADE3 /* Sources */,
+				F4F4D354240EF2F50062ADE3 /* Frameworks */,
+				F4F4D355240EF2F50062ADE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "the-agile-monkeys-challenge";
+			productName = "the-agile-monkeys-challenge";
+			productReference = F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4F4D36C240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F4D384240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeTests" */;
+			buildPhases = (
+				F4F4D369240EF2F60062ADE3 /* Sources */,
+				F4F4D36A240EF2F60062ADE3 /* Frameworks */,
+				F4F4D36B240EF2F60062ADE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4F4D36F240EF2F60062ADE3 /* PBXTargetDependency */,
+			);
+			name = "the-agile-monkeys-challengeTests";
+			productName = "the-agile-monkeys-challengeTests";
+			productReference = F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4F4D377240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F4D387240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeUITests" */;
+			buildPhases = (
+				F4F4D374240EF2F60062ADE3 /* Sources */,
+				F4F4D375240EF2F60062ADE3 /* Frameworks */,
+				F4F4D376240EF2F60062ADE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4F4D37A240EF2F60062ADE3 /* PBXTargetDependency */,
+			);
+			name = "the-agile-monkeys-challengeUITests";
+			productName = "the-agile-monkeys-challengeUITests";
+			productReference = F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4F4D34F240EF2F50062ADE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Mario Peñate Fariñas";
+				TargetAttributes = {
+					F4F4D356240EF2F50062ADE3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F4F4D36C240EF2F60062ADE3 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F4F4D356240EF2F50062ADE3;
+					};
+					F4F4D377240EF2F60062ADE3 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F4F4D356240EF2F50062ADE3;
+					};
+				};
+			};
+			buildConfigurationList = F4F4D352240EF2F50062ADE3 /* Build configuration list for PBXProject "the-agile-monkeys-challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4F4D34E240EF2F50062ADE3;
+			productRefGroup = F4F4D358240EF2F50062ADE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4F4D356240EF2F50062ADE3 /* the-agile-monkeys-challenge */,
+				F4F4D36C240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */,
+				F4F4D377240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4F4D355240EF2F50062ADE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */,
+				F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */,
+				F4F4D362240EF2F50062ADE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4D36B240EF2F60062ADE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4D376240EF2F60062ADE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4F4D353240EF2F50062ADE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4D35F240EF2F50062ADE3 /* ViewController.swift in Sources */,
+				F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */,
+				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4D369240EF2F60062ADE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4D372240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4D374240EF2F60062ADE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4D37D240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4F4D36F240EF2F60062ADE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4F4D356240EF2F50062ADE3 /* the-agile-monkeys-challenge */;
+			targetProxy = F4F4D36E240EF2F60062ADE3 /* PBXContainerItemProxy */;
+		};
+		F4F4D37A240EF2F60062ADE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4F4D356240EF2F50062ADE3 /* the-agile-monkeys-challenge */;
+			targetProxy = F4F4D379240EF2F60062ADE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4F4D360240EF2F50062ADE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4F4D361240EF2F50062ADE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4F4D366240EF2F60062ADE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4F4D37F240EF2F60062ADE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4F4D380240EF2F60062ADE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4F4D382240EF2F60062ADE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LF6CANW49;
+				INFOPLIST_FILE = "the-agile-monkeys-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4F4D383240EF2F60062ADE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LF6CANW49;
+				INFOPLIST_FILE = "the-agile-monkeys-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4F4D385240EF2F60062ADE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LF6CANW49;
+				INFOPLIST_FILE = "the-agile-monkeys-challengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-agile-monkeys-challenge.app/the-agile-monkeys-challenge";
+			};
+			name = Debug;
+		};
+		F4F4D386240EF2F60062ADE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LF6CANW49;
+				INFOPLIST_FILE = "the-agile-monkeys-challengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-agile-monkeys-challenge.app/the-agile-monkeys-challenge";
+			};
+			name = Release;
+		};
+		F4F4D388240EF2F60062ADE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LF6CANW49;
+				INFOPLIST_FILE = "the-agile-monkeys-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "the-agile-monkeys-challenge";
+			};
+			name = Debug;
+		};
+		F4F4D389240EF2F60062ADE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LF6CANW49;
+				INFOPLIST_FILE = "the-agile-monkeys-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "the-agile-monkeys-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4F4D352240EF2F50062ADE3 /* Build configuration list for PBXProject "the-agile-monkeys-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4D37F240EF2F60062ADE3 /* Debug */,
+				F4F4D380240EF2F60062ADE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F4D381240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4D382240EF2F60062ADE3 /* Debug */,
+				F4F4D383240EF2F60062ADE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F4D384240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4D385240EF2F60062ADE3 /* Debug */,
+				F4F4D386240EF2F60062ADE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F4D387240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4D388240EF2F60062ADE3 /* Debug */,
+				F4F4D389240EF2F60062ADE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4F4D34F240EF2F50062ADE3 /* Project object */;
+}
