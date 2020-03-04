@@ -18,9 +18,9 @@
 		F4DFBD5A241030490093B181 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD59241030490093B181 /* StoreView.swift */; };
 		F4DFBD5E241033830093B181 /* BaseNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */; };
 		F4F1808F241038380044C59B /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1808E241038380044C59B /* APIEndpoint.swift */; };
-		F4F18091241038630044C59B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F18090241038630044C59B /* NetworkError.swift */; };
 		F4F1809424103BB40044C59B /* StoreNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */; };
 		F4F1809624103C4D0044C59B /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1809524103C4D0044C59B /* DataRequest.swift */; };
+		F4F18099241069A50044C59B /* StoreNetworkProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F18098241069A50044C59B /* StoreNetworkProviderTest.swift */; };
 		F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */; };
 		F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */; };
 		F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D363240EF2F60062ADE3 /* Assets.xcassets */; };
@@ -64,9 +64,9 @@
 		F4DFBD59241030490093B181 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkProvider.swift; sourceTree = "<group>"; };
 		F4F1808E241038380044C59B /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
-		F4F18090241038630044C59B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkProvider.swift; sourceTree = "<group>"; };
 		F4F1809524103C4D0044C59B /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		F4F18098241069A50044C59B /* StoreNetworkProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkProviderTest.swift; sourceTree = "<group>"; };
 		F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agile Monkeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +181,6 @@
 			children = (
 				F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */,
 				F4F1808E241038380044C59B /* APIEndpoint.swift */,
-				F4F18090241038630044C59B /* NetworkError.swift */,
 				F4F1809224103AC30044C59B /* Use Case */,
 			);
 			path = Network;
@@ -193,6 +192,14 @@
 				F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */,
 			);
 			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		F4F18097241069760044C59B /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				F4F18098241069A50044C59B /* StoreNetworkProviderTest.swift */,
+			);
+			path = Integration;
 			sourceTree = "<group>";
 		};
 		F4F4D34E240EF2F50062ADE3 = {
@@ -236,6 +243,7 @@
 		F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4F18097241069760044C59B /* Integration */,
 				F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */,
 				F4F4D373240EF2F60062ADE3 /* Info.plist */,
 			);
@@ -501,7 +509,6 @@
 				F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */,
 				F4DFBD5A241030490093B181 /* StoreView.swift in Sources */,
 				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
-				F4F18091241038630044C59B /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F4D372240EF2F60062ADE3 /* AgileMonkeysTests.swift in Sources */,
+				F4F18099241069A50044C59B /* StoreNetworkProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

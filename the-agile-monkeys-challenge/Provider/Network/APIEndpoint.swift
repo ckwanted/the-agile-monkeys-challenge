@@ -11,11 +11,11 @@ import Foundation
 let kBaseUrl = ProcessInfo.processInfo.environment["base_url"] ?? ""
 
 enum APIEndpoint {
-    case stores
+    case allStores
     
     var url: String {
         switch self {
-        case .stores:
+        case .allStores:
             return "\(kBaseUrl)/stores"
         }
     }

@@ -9,6 +9,8 @@
 import Foundation
 import Alamofire
 
+typealias NetworkCompletion<T> = (Swift.Result<T, Error>) -> Void
+
 class BaseNetworkProvider {
     
     #if DEBUG
@@ -17,7 +19,7 @@ class BaseNetworkProvider {
         private let kDebugNetworking: Bool = false
     #endif
     
-    var headers: Parameters {
+    internal var headers: [String: String] {
         return [
             "Accept-Language": Locale.current.languageCode ?? "en",
             "Content-Type": "application/json",
@@ -34,7 +36,15 @@ class BaseNetworkProvider {
         return manager
     }()
     
-    private func debugging(response: DefaultDataResponse) {
+    // MARK: - Helpers
+    
+    internal func cancelAllRequest() {
+        self.sessionManager.session.getAllTasks { dataTasks in
+            dataTasks.forEach({ $0.cancel() })
+        }
+    }
+    
+    internal func debugging(response: DefaultDataResponse) {
         guard kDebugNetworking else {
             return
         }
@@ -48,6 +58,17 @@ class BaseNetworkProvider {
         if let error = response.error {
             print("\nERROR [\(self)] \(String(describing: error))")
         }
+    }
+    
+    internal func handleResponse<T>(response: DataResponse<T>, completion: NetworkCompletion<T>) {
+        
+        switch response.result {
+        case .success(let data):
+            completion(.success(data))
+        case .failure(let error):
+            completion(.failure(error))
+        }
+        
     }
     
 }

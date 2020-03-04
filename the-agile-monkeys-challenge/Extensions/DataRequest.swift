@@ -12,7 +12,7 @@ import Alamofire
 extension DataRequest {
     
     @discardableResult
-    func monkeyResponse<T: Codable>(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<T>) -> Void) -> Self {
+    func responseStores(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<[Store]>) -> Void) -> Self {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
     

@@ -10,4 +10,21 @@ import Foundation
 
 class StoreNetworkProvider: BaseNetworkProvider {
     
+    func allStores(completion: @escaping NetworkCompletion<[Store]>) {
+        
+        self.sessionManager.request(APIEndpoint.allStores.url,
+                                    method: .get,
+                                    parameters: nil,
+                                    headers: self.headers)
+        .validate(contentType: ["application/json"])
+        .response { response in
+            self.debugging(response: response)
+        }
+        .validate(statusCode: 200..<300)
+        .responseStores { response in
+            self.handleResponse(response: response, completion: completion)
+        }
+        
+    }
+    
 }
