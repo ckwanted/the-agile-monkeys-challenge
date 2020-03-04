@@ -11,6 +11,8 @@
 		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
 		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
 		F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBB5240F103D0049B5C3 /* UserCase.swift */; };
+		F4DFBD5824102EA80093B181 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD5724102EA80093B181 /* Store.swift */; };
+		F4DFBD5A241030490093B181 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD59241030490093B181 /* StoreView.swift */; };
 		F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */; };
 		F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */; };
 		F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D363240EF2F60062ADE3 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
 		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F44AEBB5240F103D0049B5C3 /* UserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCase.swift; sourceTree = "<group>"; };
+		F4DFBD5724102EA80093B181 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F4DFBD59241030490093B181 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agile Monkeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F4DFBD5624102E8D0093B181 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBD5724102EA80093B181 /* Store.swift */,
+				F4DFBD59241030490093B181 /* StoreView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F4F4D34E240EF2F50062ADE3 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 				F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */,
 				F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */,
 				F44AEBAE240F08A50049B5C3 /* Extensions */,
+				F4DFBD5624102E8D0093B181 /* Models */,
 				F44AEBA5240EFFB30049B5C3 /* User Cases */,
 				F4F4D363240EF2F60062ADE3 /* Assets.xcassets */,
 				F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */,
@@ -292,7 +306,9 @@
 				F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */,
 				F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */,
 				F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */,
+				F4DFBD5824102EA80093B181 /* Store.swift in Sources */,
 				F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */,
+				F4DFBD5A241030490093B181 /* StoreView.swift in Sources */,
 				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
