@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0671D2A99970472EF72FCD3D /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880C7A3E772FCD7AB9393A9 /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework */; };
+		85C3A8585422175A3FF3630E /* Pods_the_agile_monkeys_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7017DEDA761E7F2235368010 /* Pods_the_agile_monkeys_challenge.framework */; };
+		D6EC9F7902FB08197755559B /* Pods_the_agile_monkeys_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C932F15548318399F3885E0 /* Pods_the_agile_monkeys_challengeTests.framework */; };
 		F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */; };
 		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
 		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
 		F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBB5240F103D0049B5C3 /* UserCase.swift */; };
 		F4DFBD5824102EA80093B181 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD5724102EA80093B181 /* Store.swift */; };
 		F4DFBD5A241030490093B181 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD59241030490093B181 /* StoreView.swift */; };
+		F4DFBD5E241033830093B181 /* BaseNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */; };
+		F4F1808F241038380044C59B /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1808E241038380044C59B /* APIEndpoint.swift */; };
+		F4F18091241038630044C59B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F18090241038630044C59B /* NetworkError.swift */; };
+		F4F1809424103BB40044C59B /* StoreNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */; };
+		F4F1809624103C4D0044C59B /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1809524103C4D0044C59B /* DataRequest.swift */; };
 		F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */; };
 		F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */; };
 		F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D363240EF2F60062ADE3 /* Assets.xcassets */; };
@@ -39,12 +47,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BC0A445ACE516FA02ED1200 /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5880C7A3E772FCD7AB9393A9 /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6116862468027168825AD5DD /* Pods-the-agile-monkeys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challengeTests/Pods-the-agile-monkeys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C5E6255608A35A8A2A1A49D /* Pods-the-agile-monkeys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challengeTests/Pods-the-agile-monkeys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		7017DEDA761E7F2235368010 /* Pods_the_agile_monkeys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_agile_monkeys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DCB4C799F6ADFF3A138F75 /* Pods-the-agile-monkeys-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge.debug.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7DB8AF32C59109740D449853 /* Pods-the-agile-monkeys-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge.release.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		85597A8C71A888B863B1031A /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C932F15548318399F3885E0 /* Pods_the_agile_monkeys_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_agile_monkeys_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
 		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
 		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F44AEBB5240F103D0049B5C3 /* UserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCase.swift; sourceTree = "<group>"; };
 		F4DFBD5724102EA80093B181 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F4DFBD59241030490093B181 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkProvider.swift; sourceTree = "<group>"; };
+		F4F1808E241038380044C59B /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		F4F18090241038630044C59B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkProvider.swift; sourceTree = "<group>"; };
+		F4F1809524103C4D0044C59B /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agile Monkeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C3A8585422175A3FF3630E /* Pods_the_agile_monkeys_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EC9F7902FB08197755559B /* Pods_the_agile_monkeys_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0671D2A99970472EF72FCD3D /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614D388159BC1046F7159BF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DCB4C799F6ADFF3A138F75 /* Pods-the-agile-monkeys-challenge.debug.xcconfig */,
+				7DB8AF32C59109740D449853 /* Pods-the-agile-monkeys-challenge.release.xcconfig */,
+				1BC0A445ACE516FA02ED1200 /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig */,
+				85597A8C71A888B863B1031A /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig */,
+				6116862468027168825AD5DD /* Pods-the-agile-monkeys-challengeTests.debug.xcconfig */,
+				6C5E6255608A35A8A2A1A49D /* Pods-the-agile-monkeys-challengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8410B8C8A8B2E0DD51C00F5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7017DEDA761E7F2235368010 /* Pods_the_agile_monkeys_challenge.framework */,
+				5880C7A3E772FCD7AB9393A9 /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework */,
+				8C932F15548318399F3885E0 /* Pods_the_agile_monkeys_challengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F44AEBA5240EFFB30049B5C3 /* User Cases */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				F44AEBAF240F08B60049B5C3 /* UIView.swift */,
+				F4F1809524103C4D0044C59B /* DataRequest.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +168,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F4DFBD5B2410335C0093B181 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBD5C2410336F0093B181 /* Network */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F4DFBD5C2410336F0093B181 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */,
+				F4F1808E241038380044C59B /* APIEndpoint.swift */,
+				F4F18090241038630044C59B /* NetworkError.swift */,
+				F4F1809224103AC30044C59B /* Use Case */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4F1809224103AC30044C59B /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
 		F4F4D34E240EF2F50062ADE3 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +202,8 @@
 				F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */,
 				F4F4D37B240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */,
 				F4F4D358240EF2F50062ADE3 /* Products */,
+				614D388159BC1046F7159BF2 /* Pods */,
+				8410B8C8A8B2E0DD51C00F5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +223,7 @@
 				F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */,
 				F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */,
 				F44AEBAE240F08A50049B5C3 /* Extensions */,
+				F4DFBD5B2410335C0093B181 /* Provider */,
 				F4DFBD5624102E8D0093B181 /* Models */,
 				F44AEBA5240EFFB30049B5C3 /* User Cases */,
 				F4F4D363240EF2F60062ADE3 /* Assets.xcassets */,
@@ -179,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4F4D381240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challenge" */;
 			buildPhases = (
+				0F60FF105103292CDBFBFCC9 /* [CP] Check Pods Manifest.lock */,
 				F4F4D353240EF2F50062ADE3 /* Sources */,
 				F4F4D354240EF2F50062ADE3 /* Frameworks */,
 				F4F4D355240EF2F50062ADE3 /* Resources */,
+				96F02EDF42B6E1A43DC1C491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4F4D384240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeTests" */;
 			buildPhases = (
+				3C4E17CFCADEE1EE7DB68E6A /* [CP] Check Pods Manifest.lock */,
 				F4F4D369240EF2F60062ADE3 /* Sources */,
 				F4F4D36A240EF2F60062ADE3 /* Frameworks */,
 				F4F4D36B240EF2F60062ADE3 /* Resources */,
@@ -214,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4F4D387240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeUITests" */;
 			buildPhases = (
+				3FE79592607338E35DB3BFF1 /* [CP] Check Pods Manifest.lock */,
 				F4F4D374240EF2F60062ADE3 /* Sources */,
 				F4F4D375240EF2F60062ADE3 /* Frameworks */,
 				F4F4D376240EF2F60062ADE3 /* Resources */,
+				E5C9AF20113CE899406D207E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,18 +382,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F60FF105103292CDBFBFCC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-agile-monkeys-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C4E17CFCADEE1EE7DB68E6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-agile-monkeys-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE79592607338E35DB3BFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96F02EDF42B6E1A43DC1C491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C9AF20113CE899406D207E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4F4D353240EF2F50062ADE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */,
+				F4F1808F241038380044C59B /* APIEndpoint.swift in Sources */,
 				F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */,
+				F4F1809624103C4D0044C59B /* DataRequest.swift in Sources */,
 				F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */,
 				F4DFBD5824102EA80093B181 /* Store.swift in Sources */,
+				F4DFBD5E241033830093B181 /* BaseNetworkProvider.swift in Sources */,
+				F4F1809424103BB40044C59B /* StoreNetworkProvider.swift in Sources */,
 				F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */,
 				F4DFBD5A241030490093B181 /* StoreView.swift in Sources */,
 				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
+				F4F18091241038630044C59B /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +664,7 @@
 		};
 		F4F4D382240EF2F60062ADE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DCB4C799F6ADFF3A138F75 /* Pods-the-agile-monkeys-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +683,7 @@
 		};
 		F4F4D383240EF2F60062ADE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB8AF32C59109740D449853 /* Pods-the-agile-monkeys-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +702,7 @@
 		};
 		F4F4D385240EF2F60062ADE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6116862468027168825AD5DD /* Pods-the-agile-monkeys-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +725,7 @@
 		};
 		F4F4D386240EF2F60062ADE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5E6255608A35A8A2A1A49D /* Pods-the-agile-monkeys-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +748,7 @@
 		};
 		F4F4D388240EF2F60062ADE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC0A445ACE516FA02ED1200 /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -572,6 +769,7 @@
 		};
 		F4F4D389240EF2F60062ADE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85597A8C71A888B863B1031A /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
