@@ -60,7 +60,7 @@ class BaseNetworkProvider {
         }
     }
     
-    internal func handleResponse<T>(response: DataResponse<T>, completion: NetworkCompletion<T>) {
+    internal func handleResponse<T: Codable>(response: DataResponse<T>, completion: NetworkCompletion<T>) {
         
         switch response.result {
         case .success(let data):
