@@ -22,7 +22,7 @@ extension DataRequest {
     }
     
     @discardableResult
-    func responseSortBy(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<[SortBy]>) -> Void) -> Self {
+    func responseFilters(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<[Filter]>) -> Void) -> Self {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
     

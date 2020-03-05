@@ -27,9 +27,9 @@ class CategoryNetworkProvider: BaseNetworkProvider {
         
     }
     
-    func fetchFilters(storeId: Int, categoryId: String, completion: @escaping NetworkCompletion<[SortBy]>) {
+    func fetchFilters(storeId: Int, categoryId: String, completion: @escaping NetworkCompletion<[Filter]>) {
         
-        self.sessionManager.request(APIEndpoint.categoriesSortBy(storeId: storeId, categoryId: categoryId).url,
+        self.sessionManager.request(APIEndpoint.filters(storeId: storeId, categoryId: categoryId).url,
                                     method: .get,
                                     parameters: nil,
                                     headers: self.headers)
@@ -38,7 +38,7 @@ class CategoryNetworkProvider: BaseNetworkProvider {
             self.debugging(response: response)
         }
         .validate(statusCode: 200..<300)
-        .responseSortBy { response in
+        .responseFilters { response in
             self.handleResponse(response: response, completion: completion)
         }
         

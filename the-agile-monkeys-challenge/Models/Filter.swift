@@ -1,5 +1,5 @@
 //
-//  SortBy.swift
+//  Filter.swift
 //  the-agile-monkeys-challenge
 //
 //  Created by Mario Peñate Fariñas on 05/03/2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SortBy: Codable {
+struct Filter: Codable {
     let name: String?
     let order: String?
     let direction: String?
