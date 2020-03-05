@@ -71,4 +71,23 @@ class BaseNetworkProvider {
         
     }
     
+    // MARK: - HTTP METHODS
+    
+    func GET(endpoint: APIEndpoint, parameters: [String: Any]? = [:], completion: @escaping (DataRequest) -> Void) {
+        
+        let dataRequest = self.sessionManager.request(endpoint.url,
+                                    method: .get,
+                                    parameters: parameters,
+                                    encoding: URLEncoding.default,
+                                    headers: self.headers)
+            .validate(contentType: ["application/json"])
+            .response { response in
+                self.debugging(response: response)
+            }
+            .validate(statusCode: 200..<300)
+        
+        completion(dataRequest)
+            
+    }
+    
 }
