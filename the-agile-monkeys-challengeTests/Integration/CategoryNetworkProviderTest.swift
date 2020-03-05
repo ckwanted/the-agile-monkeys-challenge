@@ -21,7 +21,7 @@ class CategoryNetworkProviderTest: XCTestCase {
         super.tearDown()
     }
 
-    func testFetchAll() {
+    func testFetchAllCategories() {
         let expectation = XCTestExpectation(description: "CategoryProvider should return all categories")
         
         self.categoryProvider.allCategories(storeId: 1) { result in
@@ -37,10 +37,10 @@ class CategoryNetworkProviderTest: XCTestCase {
         wait(for: [expectation], timeout: 4.0)
     }
     
-    func testFetchFilters() {
+    func testFetchCategoriesSortBy() {
         let expectation = XCTestExpectation(description: "CategoryProvider should return all categories sort by")
         
-        self.categoryProvider.fetchFilters(storeId: 1, categoryId: "23") { result in
+        self.categoryProvider.allCategoriesSortBy(storeId: 1, categoryId: "23") { result in
             switch result {
             case .success(let filters):
                 XCTAssert(filters.count > 0)

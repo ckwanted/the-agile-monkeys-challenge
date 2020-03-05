@@ -20,10 +20,10 @@ class CategoryNetworkProvider: BaseNetworkProvider {
         
     }
     
-    func fetchFilters(storeId: Int, categoryId: String, completion: @escaping NetworkCompletion<[Filter]>) {
+    func allCategoriesSortBy(storeId: Int, categoryId: String, completion: @escaping NetworkCompletion<[SortBy]>) {
         
-        self.GET(endpoint: APIEndpoint.filters(storeId: storeId, categoryId: categoryId)) { dataRequest in
-            dataRequest.responseFilters { response in
+        self.GET(endpoint: APIEndpoint.allCategoriesSortBy(storeId: storeId, categoryId: categoryId)) { dataRequest in
+            dataRequest.responseSortBy { response in
                 self.handleResponse(response: response, completion: completion)
             }
         }
