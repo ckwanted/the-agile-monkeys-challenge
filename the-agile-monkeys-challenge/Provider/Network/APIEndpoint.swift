@@ -13,6 +13,7 @@ let kBaseUrl = ProcessInfo.processInfo.environment["base_url"] ?? ""
 enum APIEndpoint {
     case allStores
     case allCategories(storeId: Int)
+    case categoriesSortBy(storeId: Int, categoryId: String)
     
     var url: String {
         switch self {
@@ -20,6 +21,8 @@ enum APIEndpoint {
             return "\(kBaseUrl)/stores"
         case .allCategories(let storeId):
             return "\(kBaseUrl)/stores/\(storeId)/categories"
+        case .categoriesSortBy(let storeId, let categoryId):
+            return "\(kBaseUrl)/stores/\(storeId)/categories/\(categoryId)/sortby"
         }
     }
     

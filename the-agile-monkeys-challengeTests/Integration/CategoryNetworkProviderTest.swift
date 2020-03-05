@@ -36,5 +36,21 @@ class CategoryNetworkProviderTest: XCTestCase {
         
         wait(for: [expectation], timeout: 4.0)
     }
+    
+    func testFetchFilters() {
+        let expectation = XCTestExpectation(description: "CategoryProvider should return all categories sort by")
+        
+        self.categoryProvider.fetchFilters(storeId: 1, categoryId: "23") { result in
+            switch result {
+            case .success(let filters):
+                XCTAssert(filters.count > 0)
+                expectation.fulfill()
+            case .failure( _):
+                XCTAssert(false)
+            }
+        }
+        
+        wait(for: [expectation], timeout: 4.0)
+    }
 
 }

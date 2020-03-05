@@ -21,6 +21,11 @@ extension DataRequest {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
     
+    @discardableResult
+    func responseSortBy(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<[SortBy]>) -> Void) -> Self {
+        return responseDecodable(queue: queue, completionHandler: completionHandler)
+    }
+    
 }
 
 extension DataRequest {

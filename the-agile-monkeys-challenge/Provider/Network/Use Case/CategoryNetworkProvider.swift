@@ -27,4 +27,21 @@ class CategoryNetworkProvider: BaseNetworkProvider {
         
     }
     
+    func fetchFilters(storeId: Int, categoryId: String, completion: @escaping NetworkCompletion<[SortBy]>) {
+        
+        self.sessionManager.request(APIEndpoint.categoriesSortBy(storeId: storeId, categoryId: categoryId).url,
+                                    method: .get,
+                                    parameters: nil,
+                                    headers: self.headers)
+        .validate(contentType: ["application/json"])
+        .response { response in
+            self.debugging(response: response)
+        }
+        .validate(statusCode: 200..<300)
+        .responseSortBy { response in
+            self.handleResponse(response: response, completion: completion)
+        }
+        
+    }
+    
 }
