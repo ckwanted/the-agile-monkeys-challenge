@@ -26,6 +26,11 @@ extension DataRequest {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
     
+    @discardableResult
+    func responseProducts(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<ProductContainer>) -> Void) -> Self {
+        return responseDecodable(queue: queue, completionHandler: completionHandler)
+    }
+    
 }
 
 extension DataRequest {

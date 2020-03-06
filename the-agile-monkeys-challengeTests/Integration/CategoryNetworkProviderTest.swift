@@ -19,12 +19,13 @@ class CategoryNetworkProviderTest: XCTestCase {
 
     override func tearDown() {
         super.tearDown()
+        self.categoryProvider.cancelAllRequest()
     }
 
     func testFetchAllCategories() {
         let expectation = XCTestExpectation(description: "CategoryProvider should return all categories")
         
-        self.categoryProvider.allCategories(storeId: 1) { result in
+        self.categoryProvider.retrieveCategories(storeId: 1) { result in
             switch result {
             case .success(let categories):
                 XCTAssert(categories.count > 0)

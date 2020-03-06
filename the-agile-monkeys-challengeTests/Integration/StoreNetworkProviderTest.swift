@@ -19,12 +19,13 @@ class StoreNetworkProviderTest: XCTestCase {
 
     override func tearDown() {
         super.tearDown()
+        self.storeProvider.cancelAllRequest()
     }
 
     func testFetchAllStores() {
         let expectation = XCTestExpectation(description: "StoreProvider should return all stores")
         
-        self.storeProvider.allStores { result in
+        self.storeProvider.retrieveStores { result in
             switch result {
             case .success(let stores):
                 XCTAssert(stores.count > 0)

@@ -10,9 +10,9 @@ import Foundation
 
 class StoreNetworkProvider: BaseNetworkProvider {
     
-    func allStores(completion: @escaping NetworkCompletion<[Store]>) {
+    func retrieveStores(completion: @escaping NetworkCompletion<[Store]>) {
         
-        self.GET(endpoint: APIEndpoint.allStores) { dataRequest in
+        self.GET(endpoint: APIEndpoint.retrieveStores) { dataRequest in
             dataRequest.responseStores { response in
                 self.handleResponse(response: response, completion: completion)
             }

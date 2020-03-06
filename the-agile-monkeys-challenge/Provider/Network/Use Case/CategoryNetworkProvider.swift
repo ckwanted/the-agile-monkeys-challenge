@@ -10,9 +10,9 @@ import Foundation
 
 class CategoryNetworkProvider: BaseNetworkProvider {
     
-    func allCategories(storeId: Int, completion: @escaping NetworkCompletion<[Category]>) {
+    func retrieveCategories(storeId: Int, completion: @escaping NetworkCompletion<[Category]>) {
         
-        self.GET(endpoint: APIEndpoint.allCategories(storeId: storeId)) { dataRequest in
+        self.GET(endpoint: APIEndpoint.retrieveCategories(storeId: storeId)) { dataRequest in
             dataRequest.responseCategories { response in
                 self.handleResponse(response: response, completion: completion)
             }
