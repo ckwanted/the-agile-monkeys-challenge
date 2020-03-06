@@ -7,7 +7,25 @@
 		<key>the-agile-monkeys-challenge.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F4F4D356240EF2F50062ADE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4F4D36C240EF2F60062ADE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4F4D377240EF2F60062ADE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
