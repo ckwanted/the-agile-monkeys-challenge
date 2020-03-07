@@ -10,11 +10,15 @@ import UIKit
 
 enum UserCase {
     case fakeSplash
+    case product
     
     var viewController: UIViewController {
         switch self {
         case .fakeSplash:
             return FakeSplashView()
+        case .product:
+            let productView = ProductBuilder.build()
+            return UINavigationController(rootViewController: productView)
         }
     }
     
