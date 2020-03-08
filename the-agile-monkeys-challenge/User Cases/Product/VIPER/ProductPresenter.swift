@@ -18,7 +18,9 @@ class ProductPresenter: BasePresenter, ProductPresenterContract {
     // MARK: - Contract
     
     func retrieveAllProducts(storeId: Int) -> Void {
+        self.wireframe?.showLoading()
         self.interactor?.retrieveAllProducts(storeId: storeId) { result in
+            self.wireframe?.dismissLoading()
             switch result {
             case .success(let productContainer):
                 self.saveProductContainer(productContainer)

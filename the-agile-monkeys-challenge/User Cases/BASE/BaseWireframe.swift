@@ -7,5 +7,17 @@
 //
 
 import Foundation
+import NVActivityIndicatorView
 
-class BaseWireframe { }
+class BaseWireframe {
+    
+    func showLoading() {
+        let activityData = ActivityData()
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
+    }
+    
+    func dismissLoading() {
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+    }
+    
+}

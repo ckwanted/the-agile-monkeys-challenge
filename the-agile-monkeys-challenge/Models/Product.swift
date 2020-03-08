@@ -18,8 +18,8 @@ struct Product: Codable {
     let color: String?
     let composition: String?
     let care: String?
-    let originalPrice: Int?
-    let finalPrice: Int?
+    let originalPrice: Float?
+    let finalPrice: Float?
     let finalPriceType: String?
     let currency: String?
     let images: [String]?
@@ -42,4 +42,9 @@ struct Product: Codable {
         case images
         case sizes
     }
+    
+    func mainPictureUrl() -> URL? {
+        return URL(string: self.images?.first ?? "")
+    }
+    
 }

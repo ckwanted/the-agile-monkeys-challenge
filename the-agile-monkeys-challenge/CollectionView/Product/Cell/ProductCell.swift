@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ProductCell: UICollectionViewCell, ConfigurableCell {
     
@@ -15,11 +16,13 @@ class ProductCell: UICollectionViewCell, ConfigurableCell {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.imageView.backgroundColor = .init(white: 0.9, alpha: 1)
         self.titleLabel.text = nil
+        self.priceLabel.text = nil
     }
     
     override func prepareForReuse() {
@@ -39,6 +42,15 @@ class ProductCell: UICollectionViewCell, ConfigurableCell {
         }
         
         self.titleLabel.text = product.name
+        
+        if let price = product.finalPrice, let currencyString = product.currency, let currency = Currency(rawValue: currencyString) {
+            self.priceLabel.text = "\(price / 100) \(currency.symbol)"
+        }
+        
+        if let url = product.mainPictureUrl() {
+            self.imageView.af_setImage(withURL: url, imageTransition: UIImageView.ImageTransition.crossDissolve(0.1), runImageTransitionIfCached: true)
+        }
+        
     }
 
 }

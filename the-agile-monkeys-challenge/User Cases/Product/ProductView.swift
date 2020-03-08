@@ -16,6 +16,7 @@ class ProductView: BaseViewController, ProductViewContract {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Vars
+    private let interWidth: CGFloat = 2.5
     private let lineSpacing: CGFloat = 16
     private let marginHorizontal: CGFloat = 16
     private var dataSource: [Product] {
@@ -80,9 +81,9 @@ extension ProductView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let padding: CGFloat = 2 * self.marginHorizontal
-        let collectionViewSize = (collectionView.frame.size.width / 2) - padding
+        let collectionViewSize = (collectionView.frame.size.width / 2) - padding + (self.interWidth * 2)
 
-        return .init(width: collectionViewSize + 5, height: 270)
+        return .init(width: collectionViewSize, height: 280)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
