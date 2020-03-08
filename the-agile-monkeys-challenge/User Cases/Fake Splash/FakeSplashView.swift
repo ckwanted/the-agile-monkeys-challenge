@@ -34,7 +34,10 @@ class FakeSplashView: UIViewController {
             self.splashIcon.transform = translateY
             self.stackView.transform = translateY
         }, completion: { _ in
-            self.stackView.fadeIn { _ in }
+            self.stackView.fadeIn { _ in
+                sleep(1)
+                UIViewController.setRootView(MainTabBarView())
+            }
         })
     }
 

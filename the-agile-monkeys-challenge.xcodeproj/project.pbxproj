@@ -36,6 +36,7 @@
 		F40C04E62415019F00A4582F /* ProductDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04E52415019F00A4582F /* ProductDetailInteractor.swift */; };
 		F40C04EC2415386400A4582F /* ProductDetailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EA2415386400A4582F /* ProductDetailImage.swift */; };
 		F40C04ED2415386400A4582F /* ProductDetailImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04EB2415386400A4582F /* ProductDetailImage.xib */; };
+		F40C04F0241544FC00A4582F /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EF241544FC00A4582F /* MainTabBarView.swift */; };
 		F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */; };
 		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
 		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
@@ -121,6 +122,7 @@
 		F40C04E52415019F00A4582F /* ProductDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInteractor.swift; sourceTree = "<group>"; };
 		F40C04EA2415386400A4582F /* ProductDetailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImage.swift; sourceTree = "<group>"; };
 		F40C04EB2415386400A4582F /* ProductDetailImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailImage.xib; sourceTree = "<group>"; };
+		F40C04EF241544FC00A4582F /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
 		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
 		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -300,12 +302,21 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		F40C04EE2415448900A4582F /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04EF241544FC00A4582F /* MainTabBarView.swift */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
 		F44AEBA5240EFFB30049B5C3 /* User Cases */ = {
 			isa = PBXGroup;
 			children = (
 				F40C04B12413D5D200A4582F /* BASE */,
 				F40C04D52414F7C900A4582F /* Product Detail */,
 				F4BFEE8C2412C64F00A653D2 /* Product */,
+				F40C04EE2415448900A4582F /* Tab bar */,
 				F44AEBA6240EFFCA0049B5C3 /* Fake Splash */,
 				F44AEBB5240F103D0049B5C3 /* UserCase.swift */,
 			);
@@ -747,6 +758,7 @@
 				F47935162411BB72000A0DE3 /* Filter.swift in Sources */,
 				F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */,
 				F4DFBD5A241030490093B181 /* StoreView.swift in Sources */,
+				F40C04F0241544FC00A4582F /* MainTabBarView.swift in Sources */,
 				F40C04B32413D5E800A4582F /* BaseEntity.swift in Sources */,
 				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
 				F47935142411BB3F000A0DE3 /* Option.swift in Sources */,

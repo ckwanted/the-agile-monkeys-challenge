@@ -14,4 +14,8 @@ extension UIViewController {
         return UIApplication.shared.delegate as? AppDelegate
     }
     
+    static func setRootView(_ vc: UIViewController) {
+        UIApplication.shared.windows.first?.rootViewController = vc
+    }
+    
 }
