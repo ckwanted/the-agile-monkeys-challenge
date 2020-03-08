@@ -24,7 +24,7 @@ class ProductPresenter: BasePresenter, ProductPresenterContract {
             switch result {
             case .success(let productContainer):
                 self.saveProductContainer(productContainer)
-            case .failure(let error):
+            case .failure(_):
                 self.saveProductContainer(nil)
             }
             self.view?.reloadData()
