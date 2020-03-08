@@ -28,7 +28,7 @@ protocol ProductPresenterContract {
     var wireframe: ProductWireframe? { get set }
     
     func retrieveAllProducts(storeId: Int) -> Void
-    func saveProductContainer(_ productContainer: ProductContainer?)
+    func setProductContainer(_ productContainer: ProductContainer?)
     func getProducts() -> [Product]
 }
 

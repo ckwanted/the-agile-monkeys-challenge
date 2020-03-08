@@ -73,6 +73,10 @@ extension ProductView: UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presenter?.navigateToDetail(product: self.dataSource[indexPath.row])
+    }
+    
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout

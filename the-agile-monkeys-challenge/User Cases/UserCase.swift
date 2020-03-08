@@ -11,6 +11,7 @@ import UIKit
 enum UserCase {
     case fakeSplash
     case product
+    case productDetail(product: Product)
     
     var viewController: UIViewController {
         switch self {
@@ -19,6 +20,8 @@ enum UserCase {
         case .product:
             let productView = ProductBuilder.build()
             return UINavigationController(rootViewController: productView)
+        case .productDetail(let product):
+            return ProductDetailBuilder.build(product: product)
         }
     }
     
