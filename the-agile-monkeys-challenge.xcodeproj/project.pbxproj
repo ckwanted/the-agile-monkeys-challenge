@@ -37,6 +37,8 @@
 		F40C04EC2415386400A4582F /* ProductDetailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EA2415386400A4582F /* ProductDetailImage.swift */; };
 		F40C04ED2415386400A4582F /* ProductDetailImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04EB2415386400A4582F /* ProductDetailImage.xib */; };
 		F40C04F0241544FC00A4582F /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EF241544FC00A4582F /* MainTabBarView.swift */; };
+		F40C04F424155CD000A4582F /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04F224155CD000A4582F /* WishListView.swift */; };
+		F40C04F524155CD000A4582F /* WishListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04F324155CD000A4582F /* WishListView.xib */; };
 		F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */; };
 		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
 		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
@@ -123,6 +125,8 @@
 		F40C04EA2415386400A4582F /* ProductDetailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImage.swift; sourceTree = "<group>"; };
 		F40C04EB2415386400A4582F /* ProductDetailImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailImage.xib; sourceTree = "<group>"; };
 		F40C04EF241544FC00A4582F /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		F40C04F224155CD000A4582F /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		F40C04F324155CD000A4582F /* WishListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListView.xib; sourceTree = "<group>"; };
 		F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
 		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
 		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -310,10 +314,20 @@
 			path = "Tab bar";
 			sourceTree = "<group>";
 		};
+		F40C04F124155C6E00A4582F /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04F224155CD000A4582F /* WishListView.swift */,
+				F40C04F324155CD000A4582F /* WishListView.xib */,
+			);
+			path = WishList;
+			sourceTree = "<group>";
+		};
 		F44AEBA5240EFFB30049B5C3 /* User Cases */ = {
 			isa = PBXGroup;
 			children = (
 				F40C04B12413D5D200A4582F /* BASE */,
+				F40C04F124155C6E00A4582F /* WishList */,
 				F40C04D52414F7C900A4582F /* Product Detail */,
 				F4BFEE8C2412C64F00A653D2 /* Product */,
 				F40C04EE2415448900A4582F /* Tab bar */,
@@ -587,6 +601,7 @@
 				F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */,
 				F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */,
 				F40C04CE2413F2CB00A4582F /* ProductCell.xib in Resources */,
+				F40C04F524155CD000A4582F /* WishListView.xib in Resources */,
 				F40C04D92414F7F000A4582F /* ProductDetailView.xib in Resources */,
 				F40C04AD2413CFAA00A4582F /* ProductView.xib in Resources */,
 				F40C04ED2415386400A4582F /* ProductDetailImage.xib in Resources */,
@@ -743,6 +758,7 @@
 				F40C04DE2414FF6300A4582F /* ProductDetailContract.swift in Sources */,
 				F4BFEE972412CD7500A653D2 /* ConfigurableCell.swift in Sources */,
 				F40C04E02414FFFE00A4582F /* ProductDeailPresenter.swift in Sources */,
+				F40C04F424155CD000A4582F /* WishListView.swift in Sources */,
 				F47935102411B98A000A0DE3 /* Product.swift in Sources */,
 				F40C04E42415015700A4582F /* ProductDetailWireframe.swift in Sources */,
 				F40C04C52413D8F300A4582F /* Productlnteractor.swift in Sources */,

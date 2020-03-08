@@ -12,6 +12,7 @@ enum UserCase {
     case fakeSplash
     case product
     case productDetail(product: Product)
+    case wishList
     
     var viewController: UIViewController {
         switch self {
@@ -22,6 +23,9 @@ enum UserCase {
             return UINavigationController(rootViewController: productView)
         case .productDetail(let product):
             return ProductDetailBuilder.build(product: product)
+        case .wishList:
+            let wishListView = WishListView()
+            return UINavigationController(rootViewController: wishListView)
         }
     }
     

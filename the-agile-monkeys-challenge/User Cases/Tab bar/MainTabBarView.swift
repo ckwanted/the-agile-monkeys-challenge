@@ -9,12 +9,24 @@
 import UIKit
 
 class MainTabBarView: UITabBarController {
+    
+    private lazy var productView = UserCase.product.viewController
+    private lazy var wishListView = UserCase.wishList.viewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let homeImage = UIImage(named: "home")
+                
+        productView.tabBarItem = UITabBarItem(title: "Products", image: homeImage, selectedImage: homeImage)
+        wishListView.tabBarItem = UITabBarItem(title: "WishList", image: homeImage, selectedImage: homeImage)
+        
         self.setViewControllers([
-            UserCase.product.viewController
+            productView,
+            wishListView
         ], animated: true)
+        
+        self.selectedIndex = 0
     }
 
 }

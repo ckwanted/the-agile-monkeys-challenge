@@ -34,8 +34,6 @@ class ProductView: BaseViewController, ProductViewContract {
     private func setupView() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "Products"
-        let homeImage = UIImage(named: "home")
-        self.tabBarItem = UITabBarItem(title: "Products", image: homeImage, selectedImage: homeImage)
     }
     
     private func setupCollectionView() {
