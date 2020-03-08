@@ -12,6 +12,7 @@ class MainTabBarView: UITabBarController {
     
     private lazy var productView = UserCase.product.viewController
     private lazy var wishListView = UserCase.wishList.viewController
+    private lazy var cartView = UserCase.cart.viewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,12 @@ class MainTabBarView: UITabBarController {
                 
         productView.tabBarItem = UITabBarItem(title: "Products", image: homeImage, selectedImage: homeImage)
         wishListView.tabBarItem = UITabBarItem(title: "WishList", image: homeImage, selectedImage: homeImage)
+        cartView.tabBarItem = UITabBarItem(title: "Cart", image: homeImage, selectedImage: homeImage)
         
         self.setViewControllers([
             productView,
-            wishListView
+            wishListView,
+            cartView
         ], animated: true)
         
         self.selectedIndex = 0

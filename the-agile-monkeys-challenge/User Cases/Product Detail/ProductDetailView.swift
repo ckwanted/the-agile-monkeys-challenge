@@ -33,6 +33,8 @@ class ProductDetailView: BaseViewController, ProductDetailViewContract {
     }
     
     private func setupView() {
+        self.navigationItem.largeTitleDisplayMode = .never
+        
         self.pageControl.numberOfPages = self.product?.images?.count ?? 0
         self.pageControl.currentPage = 0
         

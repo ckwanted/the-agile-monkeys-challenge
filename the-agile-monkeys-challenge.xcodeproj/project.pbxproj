@@ -39,6 +39,8 @@
 		F40C04F0241544FC00A4582F /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EF241544FC00A4582F /* MainTabBarView.swift */; };
 		F40C04F424155CD000A4582F /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04F224155CD000A4582F /* WishListView.swift */; };
 		F40C04F524155CD000A4582F /* WishListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04F324155CD000A4582F /* WishListView.xib */; };
+		F40C04FB24156FA500A4582F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04F924156FA500A4582F /* CartView.swift */; };
+		F40C04FC24156FA500A4582F /* CartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04FA24156FA500A4582F /* CartView.xib */; };
 		F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */; };
 		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
 		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
@@ -127,6 +129,8 @@
 		F40C04EF241544FC00A4582F /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		F40C04F224155CD000A4582F /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
 		F40C04F324155CD000A4582F /* WishListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListView.xib; sourceTree = "<group>"; };
+		F40C04F924156FA500A4582F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F40C04FA24156FA500A4582F /* CartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartView.xib; sourceTree = "<group>"; };
 		F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
 		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
 		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -323,10 +327,20 @@
 			path = WishList;
 			sourceTree = "<group>";
 		};
+		F40C04F824156F8800A4582F /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04F924156FA500A4582F /* CartView.swift */,
+				F40C04FA24156FA500A4582F /* CartView.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		F44AEBA5240EFFB30049B5C3 /* User Cases */ = {
 			isa = PBXGroup;
 			children = (
 				F40C04B12413D5D200A4582F /* BASE */,
+				F40C04F824156F8800A4582F /* Cart */,
 				F40C04F124155C6E00A4582F /* WishList */,
 				F40C04D52414F7C900A4582F /* Product Detail */,
 				F4BFEE8C2412C64F00A653D2 /* Product */,
@@ -602,6 +616,7 @@
 				F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */,
 				F40C04CE2413F2CB00A4582F /* ProductCell.xib in Resources */,
 				F40C04F524155CD000A4582F /* WishListView.xib in Resources */,
+				F40C04FC24156FA500A4582F /* CartView.xib in Resources */,
 				F40C04D92414F7F000A4582F /* ProductDetailView.xib in Resources */,
 				F40C04AD2413CFAA00A4582F /* ProductView.xib in Resources */,
 				F40C04ED2415386400A4582F /* ProductDetailImage.xib in Resources */,
@@ -738,6 +753,7 @@
 				F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */,
 				F479350E2411B8FF000A0DE3 /* Size.swift in Sources */,
 				F4F1808F241038380044C59B /* APIEndpoint.swift in Sources */,
+				F40C04FB24156FA500A4582F /* CartView.swift in Sources */,
 				F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */,
 				F40C04B92413D64400A4582F /* BaseViewController.swift in Sources */,
 				F40C04C32413D89B00A4582F /* ProductWireframe.swift in Sources */,

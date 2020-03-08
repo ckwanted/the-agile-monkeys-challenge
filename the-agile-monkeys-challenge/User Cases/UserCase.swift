@@ -13,6 +13,7 @@ enum UserCase {
     case product
     case productDetail(product: Product)
     case wishList
+    case cart
     
     var viewController: UIViewController {
         switch self {
@@ -26,6 +27,9 @@ enum UserCase {
         case .wishList:
             let wishListView = WishListView()
             return UINavigationController(rootViewController: wishListView)
+        case .cart:
+            let cartView = CartView()
+            return UINavigationController(rootViewController: cartView)
         }
     }
     

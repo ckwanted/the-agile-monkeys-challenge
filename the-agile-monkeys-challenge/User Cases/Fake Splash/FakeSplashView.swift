@@ -14,6 +14,8 @@ class FakeSplashView: UIViewController {
     @IBOutlet weak var splashIcon: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     
+    private let storeProvider = StoreNetworkProvider()
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +37,20 @@ class FakeSplashView: UIViewController {
             self.stackView.transform = translateY
         }, completion: { _ in
             self.stackView.fadeIn { _ in
-                sleep(1)
-                UIViewController.setRootView(MainTabBarView())
+                self.retrieveStores()
             }
         })
+    }
+    
+    private func retrieveStores() {
+        self.storeProvider.retrieveStores { result in
+            switch result {
+            case .success(_):
+                UIViewController.setRootView(MainTabBarView())
+            case .failure(_):
+                break
+            }
+        }
     }
 
 }
