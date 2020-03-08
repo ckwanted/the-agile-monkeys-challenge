@@ -23,20 +23,24 @@ class ProductPresenter: BasePresenter, ProductPresenterContract {
             self.wireframe?.dismissLoading()
             switch result {
             case .success(let productContainer):
-                self.saveProductContainer(productContainer)
+                self.setProductContainer(productContainer)
             case .failure(_):
-                self.saveProductContainer(nil)
+                self.setProductContainer(nil)
             }
             self.view?.reloadData()
         }
     }
     
-    func saveProductContainer(_ productContainer: ProductContainer?) {
+    func setProductContainer(_ productContainer: ProductContainer?) {
         self.entity?.productContainer = productContainer
     }
     
     func getProducts() -> [Product] {
         return self.entity?.productContainer?.results ?? []
+    }
+    
+    func navigateToDetail(product: Product) {
+        self.wireframe?.navigateToDetail(product: product)
     }
     
 }

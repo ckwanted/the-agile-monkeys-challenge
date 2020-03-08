@@ -29,7 +29,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="YQJ-65-2BV" secondAttribute="bottom" constant="20" symbolic="YES" id="8Ja-nh-qdF"/>
                 <constraint firstItem="YQJ-65-2BV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dFo-Fh-hU2"/>

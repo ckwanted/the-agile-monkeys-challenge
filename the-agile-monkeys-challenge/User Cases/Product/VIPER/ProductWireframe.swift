@@ -14,5 +14,9 @@ class ProductWireframe: BaseWireframe, ProductWireframeContract {
     var view: ProductView?
     
     // MARK: - Contract
+    func navigateToDetail(product: Product) {
+        let vc = UserCase.productDetail(product: product).viewController
+        self.view?.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
