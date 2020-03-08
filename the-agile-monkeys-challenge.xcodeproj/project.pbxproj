@@ -3,18 +3,74 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0671D2A99970472EF72FCD3D /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880C7A3E772FCD7AB9393A9 /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework */; };
+		85C3A8585422175A3FF3630E /* Pods_the_agile_monkeys_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7017DEDA761E7F2235368010 /* Pods_the_agile_monkeys_challenge.framework */; };
+		D6EC9F7902FB08197755559B /* Pods_the_agile_monkeys_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C932F15548318399F3885E0 /* Pods_the_agile_monkeys_challengeTests.framework */; };
+		F40C04AC2413CFAA00A4582F /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04AA2413CFAA00A4582F /* ProductView.swift */; };
+		F40C04AD2413CFAA00A4582F /* ProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04AB2413CFAA00A4582F /* ProductView.xib */; };
+		F40C04AF2413D55100A4582F /* ProductBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04AE2413D55100A4582F /* ProductBuilder.swift */; };
+		F40C04B32413D5E800A4582F /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04B22413D5E800A4582F /* BaseEntity.swift */; };
+		F40C04B52413D60B00A4582F /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04B42413D60B00A4582F /* BaseInteractor.swift */; };
+		F40C04B72413D62A00A4582F /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04B62413D62A00A4582F /* BasePresenter.swift */; };
+		F40C04B92413D64400A4582F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04B82413D64400A4582F /* BaseViewController.swift */; };
+		F40C04BB2413D67800A4582F /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04BA2413D67800A4582F /* BaseWireframe.swift */; };
+		F40C04BD2413D6B800A4582F /* ProductContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04BC2413D6B800A4582F /* ProductContract.swift */; };
+		F40C04BF2413D73F00A4582F /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04BE2413D73F00A4582F /* ProductEntity.swift */; };
+		F40C04C12413D7A700A4582F /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04C02413D7A700A4582F /* ProductPresenter.swift */; };
+		F40C04C32413D89B00A4582F /* ProductWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04C22413D89B00A4582F /* ProductWireframe.swift */; };
+		F40C04C52413D8F300A4582F /* Productlnteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04C42413D8F300A4582F /* Productlnteractor.swift */; };
+		F40C04CD2413F2CB00A4582F /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04CB2413F2CB00A4582F /* ProductCell.swift */; };
+		F40C04CE2413F2CB00A4582F /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04CC2413F2CB00A4582F /* ProductCell.xib */; };
+		F40C04D42414ECC500A4582F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04D32414ECC500A4582F /* Currency.swift */; };
+		F40C04D82414F7F000A4582F /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04D62414F7F000A4582F /* ProductDetailView.swift */; };
+		F40C04D92414F7F000A4582F /* ProductDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04D72414F7F000A4582F /* ProductDetailView.xib */; };
+		F40C04DC2414F85B00A4582F /* ProductDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04DB2414F85B00A4582F /* ProductDetailBuilder.swift */; };
+		F40C04DE2414FF6300A4582F /* ProductDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04DD2414FF6300A4582F /* ProductDetailContract.swift */; };
+		F40C04E02414FFFE00A4582F /* ProductDeailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04DF2414FFFE00A4582F /* ProductDeailPresenter.swift */; };
+		F40C04E22415005F00A4582F /* ProductDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04E12415005F00A4582F /* ProductDetailEntity.swift */; };
+		F40C04E42415015700A4582F /* ProductDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04E32415015700A4582F /* ProductDetailWireframe.swift */; };
+		F40C04E62415019F00A4582F /* ProductDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04E52415019F00A4582F /* ProductDetailInteractor.swift */; };
+		F40C04EC2415386400A4582F /* ProductDetailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EA2415386400A4582F /* ProductDetailImage.swift */; };
+		F40C04ED2415386400A4582F /* ProductDetailImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04EB2415386400A4582F /* ProductDetailImage.xib */; };
+		F40C04F0241544FC00A4582F /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04EF241544FC00A4582F /* MainTabBarView.swift */; };
+		F40C04F424155CD000A4582F /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04F224155CD000A4582F /* WishListView.swift */; };
+		F40C04F524155CD000A4582F /* WishListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04F324155CD000A4582F /* WishListView.xib */; };
+		F40C04FB24156FA500A4582F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C04F924156FA500A4582F /* CartView.swift */; };
+		F40C04FC24156FA500A4582F /* CartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40C04FA24156FA500A4582F /* CartView.xib */; };
+		F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */; };
+		F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */; };
+		F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBAF240F08B60049B5C3 /* UIView.swift */; };
+		F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AEBB5240F103D0049B5C3 /* UserCase.swift */; };
+		F4745A4F24118C57003AC983 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4745A4E24118C57003AC983 /* Category.swift */; };
+		F4745A5124118D05003AC983 /* CategoryNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4745A5024118D05003AC983 /* CategoryNetworkProvider.swift */; };
+		F4745A5324119268003AC983 /* CategoryNetworkProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4745A5224119268003AC983 /* CategoryNetworkProviderTest.swift */; };
+		F4745A5524119F80003AC983 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4745A5424119F80003AC983 /* SortBy.swift */; };
+		F479350E2411B8FF000A0DE3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479350D2411B8FF000A0DE3 /* Size.swift */; };
+		F47935102411B98A000A0DE3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479350F2411B98A000A0DE3 /* Product.swift */; };
+		F47935122411BAEF000A0DE3 /* ProductContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47935112411BAEF000A0DE3 /* ProductContainer.swift */; };
+		F47935142411BB3F000A0DE3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47935132411BB3F000A0DE3 /* Option.swift */; };
+		F47935162411BB72000A0DE3 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47935152411BB72000A0DE3 /* Filter.swift */; };
+		F4BFEE892412B55000A653D2 /* ProductNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFEE882412B55000A653D2 /* ProductNetworkProvider.swift */; };
+		F4BFEE8B2412B8B800A653D2 /* ProductNetworkProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFEE8A2412B8B800A653D2 /* ProductNetworkProviderTest.swift */; };
+		F4BFEE972412CD7500A653D2 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFEE962412CD7500A653D2 /* ConfigurableCell.swift */; };
+		F4BFEE992412CF8C00A653D2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFEE982412CF8C00A653D2 /* UIViewController.swift */; };
+		F4DFBD5824102EA80093B181 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD5724102EA80093B181 /* Store.swift */; };
+		F4DFBD5A241030490093B181 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD59241030490093B181 /* StoreView.swift */; };
+		F4DFBD5E241033830093B181 /* BaseNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */; };
+		F4F1808F241038380044C59B /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1808E241038380044C59B /* APIEndpoint.swift */; };
+		F4F1809424103BB40044C59B /* StoreNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */; };
+		F4F1809624103C4D0044C59B /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1809524103C4D0044C59B /* DataRequest.swift */; };
+		F4F18099241069A50044C59B /* StoreNetworkProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F18098241069A50044C59B /* StoreNetworkProviderTest.swift */; };
 		F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */; };
 		F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */; };
-		F4F4D35F240EF2F50062ADE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D35E240EF2F50062ADE3 /* ViewController.swift */; };
-		F4F4D362240EF2F50062ADE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D360240EF2F50062ADE3 /* Main.storyboard */; };
 		F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D363240EF2F60062ADE3 /* Assets.xcassets */; };
 		F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */; };
-		F4F4D372240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */; };
-		F4F4D37D240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */; };
+		F4F4D372240EF2F60062ADE3 /* AgileMonkeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */; };
+		F4F4D37D240EF2F60062ADE3 /* AgileMonkeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D37C240EF2F60062ADE3 /* AgileMonkeyUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +91,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-agile-monkeys-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC0A445ACE516FA02ED1200 /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5880C7A3E772FCD7AB9393A9 /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6116862468027168825AD5DD /* Pods-the-agile-monkeys-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challengeTests/Pods-the-agile-monkeys-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C5E6255608A35A8A2A1A49D /* Pods-the-agile-monkeys-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challengeTests/Pods-the-agile-monkeys-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		7017DEDA761E7F2235368010 /* Pods_the_agile_monkeys_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_agile_monkeys_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DCB4C799F6ADFF3A138F75 /* Pods-the-agile-monkeys-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge.debug.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7DB8AF32C59109740D449853 /* Pods-the-agile-monkeys-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge.release.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		85597A8C71A888B863B1031A /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C932F15548318399F3885E0 /* Pods_the_agile_monkeys_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_agile_monkeys_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40C04AA2413CFAA00A4582F /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		F40C04AB2413CFAA00A4582F /* ProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
+		F40C04AE2413D55100A4582F /* ProductBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBuilder.swift; sourceTree = "<group>"; };
+		F40C04B22413D5E800A4582F /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
+		F40C04B42413D60B00A4582F /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		F40C04B62413D62A00A4582F /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		F40C04B82413D64400A4582F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F40C04BA2413D67800A4582F /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		F40C04BC2413D6B800A4582F /* ProductContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContract.swift; sourceTree = "<group>"; };
+		F40C04BE2413D73F00A4582F /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		F40C04C02413D7A700A4582F /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
+		F40C04C22413D89B00A4582F /* ProductWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWireframe.swift; sourceTree = "<group>"; };
+		F40C04C42413D8F300A4582F /* Productlnteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Productlnteractor.swift; sourceTree = "<group>"; };
+		F40C04CB2413F2CB00A4582F /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		F40C04CC2413F2CB00A4582F /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		F40C04D32414ECC500A4582F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F40C04D62414F7F000A4582F /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		F40C04D72414F7F000A4582F /* ProductDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailView.xib; sourceTree = "<group>"; };
+		F40C04DB2414F85B00A4582F /* ProductDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailBuilder.swift; sourceTree = "<group>"; };
+		F40C04DD2414FF6300A4582F /* ProductDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailContract.swift; sourceTree = "<group>"; };
+		F40C04DF2414FFFE00A4582F /* ProductDeailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDeailPresenter.swift; sourceTree = "<group>"; };
+		F40C04E12415005F00A4582F /* ProductDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailEntity.swift; sourceTree = "<group>"; };
+		F40C04E32415015700A4582F /* ProductDetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailWireframe.swift; sourceTree = "<group>"; };
+		F40C04E52415019F00A4582F /* ProductDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInteractor.swift; sourceTree = "<group>"; };
+		F40C04EA2415386400A4582F /* ProductDetailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImage.swift; sourceTree = "<group>"; };
+		F40C04EB2415386400A4582F /* ProductDetailImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailImage.xib; sourceTree = "<group>"; };
+		F40C04EF241544FC00A4582F /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		F40C04F224155CD000A4582F /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		F40C04F324155CD000A4582F /* WishListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListView.xib; sourceTree = "<group>"; };
+		F40C04F924156FA500A4582F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F40C04FA24156FA500A4582F /* CartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartView.xib; sourceTree = "<group>"; };
+		F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
+		F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSplashView.xib; sourceTree = "<group>"; };
+		F44AEBAF240F08B60049B5C3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F44AEBB5240F103D0049B5C3 /* UserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCase.swift; sourceTree = "<group>"; };
+		F4745A4E24118C57003AC983 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F4745A5024118D05003AC983 /* CategoryNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNetworkProvider.swift; sourceTree = "<group>"; };
+		F4745A5224119268003AC983 /* CategoryNetworkProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNetworkProviderTest.swift; sourceTree = "<group>"; };
+		F4745A5424119F80003AC983 /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
+		F479350D2411B8FF000A0DE3 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		F479350F2411B98A000A0DE3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F47935112411BAEF000A0DE3 /* ProductContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContainer.swift; sourceTree = "<group>"; };
+		F47935132411BB3F000A0DE3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		F47935152411BB72000A0DE3 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		F4BFEE882412B55000A653D2 /* ProductNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNetworkProvider.swift; sourceTree = "<group>"; };
+		F4BFEE8A2412B8B800A653D2 /* ProductNetworkProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNetworkProviderTest.swift; sourceTree = "<group>"; };
+		F4BFEE962412CD7500A653D2 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		F4BFEE982412CF8C00A653D2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F4DFBD5724102EA80093B181 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F4DFBD59241030490093B181 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkProvider.swift; sourceTree = "<group>"; };
+		F4F1808E241038380044C59B /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkProvider.swift; sourceTree = "<group>"; };
+		F4F1809524103C4D0044C59B /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		F4F18098241069A50044C59B /* StoreNetworkProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkProviderTest.swift; sourceTree = "<group>"; };
+		F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agile Monkeys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4F4D35E240EF2F50062ADE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4F4D361240EF2F50062ADE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F4D363240EF2F60062ADE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4F4D366240EF2F60062ADE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4F4D368240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-agile-monkeys-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_agile_monkeys_challengeTests.swift; sourceTree = "<group>"; };
+		F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileMonkeysTests.swift; sourceTree = "<group>"; };
 		F4F4D373240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-agile-monkeys-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_agile_monkeys_challengeUITests.swift; sourceTree = "<group>"; };
+		F4F4D37C240EF2F60062ADE3 /* AgileMonkeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileMonkeyUITests.swift; sourceTree = "<group>"; };
 		F4F4D37E240EF2F60062ADE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C3A8585422175A3FF3630E /* Pods_the_agile_monkeys_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EC9F7902FB08197755559B /* Pods_the_agile_monkeys_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +190,261 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0671D2A99970472EF72FCD3D /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614D388159BC1046F7159BF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DCB4C799F6ADFF3A138F75 /* Pods-the-agile-monkeys-challenge.debug.xcconfig */,
+				7DB8AF32C59109740D449853 /* Pods-the-agile-monkeys-challenge.release.xcconfig */,
+				1BC0A445ACE516FA02ED1200 /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig */,
+				85597A8C71A888B863B1031A /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig */,
+				6116862468027168825AD5DD /* Pods-the-agile-monkeys-challengeTests.debug.xcconfig */,
+				6C5E6255608A35A8A2A1A49D /* Pods-the-agile-monkeys-challengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8410B8C8A8B2E0DD51C00F5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7017DEDA761E7F2235368010 /* Pods_the_agile_monkeys_challenge.framework */,
+				5880C7A3E772FCD7AB9393A9 /* Pods_the_agile_monkeys_challenge_the_agile_monkeys_challengeUITests.framework */,
+				8C932F15548318399F3885E0 /* Pods_the_agile_monkeys_challengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40C04B02413D5C100A4582F /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04AE2413D55100A4582F /* ProductBuilder.swift */,
+				F40C04BC2413D6B800A4582F /* ProductContract.swift */,
+				F40C04C02413D7A700A4582F /* ProductPresenter.swift */,
+				F40C04BE2413D73F00A4582F /* ProductEntity.swift */,
+				F40C04C22413D89B00A4582F /* ProductWireframe.swift */,
+				F40C04C42413D8F300A4582F /* Productlnteractor.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		F40C04B12413D5D200A4582F /* BASE */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04B22413D5E800A4582F /* BaseEntity.swift */,
+				F40C04B42413D60B00A4582F /* BaseInteractor.swift */,
+				F40C04B62413D62A00A4582F /* BasePresenter.swift */,
+				F40C04B82413D64400A4582F /* BaseViewController.swift */,
+				F40C04BA2413D67800A4582F /* BaseWireframe.swift */,
+			);
+			path = BASE;
+			sourceTree = "<group>";
+		};
+		F40C04C92413F2AE00A4582F /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04CA2413F2BA00A4582F /* Cell */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		F40C04CA2413F2BA00A4582F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04CB2413F2CB00A4582F /* ProductCell.swift */,
+				F40C04CC2413F2CB00A4582F /* ProductCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F40C04D52414F7C900A4582F /* Product Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04DA2414F84600A4582F /* VIPER */,
+				F40C04D62414F7F000A4582F /* ProductDetailView.swift */,
+				F40C04D72414F7F000A4582F /* ProductDetailView.xib */,
+			);
+			path = "Product Detail";
+			sourceTree = "<group>";
+		};
+		F40C04DA2414F84600A4582F /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04DB2414F85B00A4582F /* ProductDetailBuilder.swift */,
+				F40C04DD2414FF6300A4582F /* ProductDetailContract.swift */,
+				F40C04DF2414FFFE00A4582F /* ProductDeailPresenter.swift */,
+				F40C04E12415005F00A4582F /* ProductDetailEntity.swift */,
+				F40C04E32415015700A4582F /* ProductDetailWireframe.swift */,
+				F40C04E52415019F00A4582F /* ProductDetailInteractor.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		F40C04E72415348C00A4582F /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04E82415349400A4582F /* Cell */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		F40C04E82415349400A4582F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04E92415383600A4582F /* Image */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F40C04E92415383600A4582F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04EA2415386400A4582F /* ProductDetailImage.swift */,
+				F40C04EB2415386400A4582F /* ProductDetailImage.xib */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F40C04EE2415448900A4582F /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04EF241544FC00A4582F /* MainTabBarView.swift */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		F40C04F124155C6E00A4582F /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04F224155CD000A4582F /* WishListView.swift */,
+				F40C04F324155CD000A4582F /* WishListView.xib */,
+			);
+			path = WishList;
+			sourceTree = "<group>";
+		};
+		F40C04F824156F8800A4582F /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04F924156FA500A4582F /* CartView.swift */,
+				F40C04FA24156FA500A4582F /* CartView.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		F44AEBA5240EFFB30049B5C3 /* User Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04B12413D5D200A4582F /* BASE */,
+				F40C04F824156F8800A4582F /* Cart */,
+				F40C04F124155C6E00A4582F /* WishList */,
+				F40C04D52414F7C900A4582F /* Product Detail */,
+				F4BFEE8C2412C64F00A653D2 /* Product */,
+				F40C04EE2415448900A4582F /* Tab bar */,
+				F44AEBA6240EFFCA0049B5C3 /* Fake Splash */,
+				F44AEBB5240F103D0049B5C3 /* UserCase.swift */,
+			);
+			path = "User Cases";
+			sourceTree = "<group>";
+		};
+		F44AEBA6240EFFCA0049B5C3 /* Fake Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F44AEBA7240EFFFD0049B5C3 /* FakeSplashView.swift */,
+				F44AEBA8240EFFFD0049B5C3 /* FakeSplashView.xib */,
+			);
+			path = "Fake Splash";
+			sourceTree = "<group>";
+		};
+		F44AEBAE240F08A50049B5C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F44AEBAF240F08B60049B5C3 /* UIView.swift */,
+				F4F1809524103C4D0044C59B /* DataRequest.swift */,
+				F4BFEE982412CF8C00A653D2 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4BFEE8C2412C64F00A653D2 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04B02413D5C100A4582F /* VIPER */,
+				F40C04AA2413CFAA00A4582F /* ProductView.swift */,
+				F40C04AB2413CFAA00A4582F /* ProductView.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		F4BFEE8F2412C9FA00A653D2 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F40C04E72415348C00A4582F /* ProductDetail */,
+				F40C04C92413F2AE00A4582F /* Product */,
+				F4BFEE962412CD7500A653D2 /* ConfigurableCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F4DFBD5624102E8D0093B181 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBD5724102EA80093B181 /* Store.swift */,
+				F4DFBD59241030490093B181 /* StoreView.swift */,
+				F4745A4E24118C57003AC983 /* Category.swift */,
+				F4745A5424119F80003AC983 /* SortBy.swift */,
+				F479350D2411B8FF000A0DE3 /* Size.swift */,
+				F479350F2411B98A000A0DE3 /* Product.swift */,
+				F47935112411BAEF000A0DE3 /* ProductContainer.swift */,
+				F47935132411BB3F000A0DE3 /* Option.swift */,
+				F47935152411BB72000A0DE3 /* Filter.swift */,
+				F40C04D32414ECC500A4582F /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4DFBD5B2410335C0093B181 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBD5C2410336F0093B181 /* Network */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F4DFBD5C2410336F0093B181 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBD5D241033830093B181 /* BaseNetworkProvider.swift */,
+				F4F1808E241038380044C59B /* APIEndpoint.swift */,
+				F4F1809224103AC30044C59B /* Use Case */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4F1809224103AC30044C59B /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				F4F1809324103BB40044C59B /* StoreNetworkProvider.swift */,
+				F4745A5024118D05003AC983 /* CategoryNetworkProvider.swift */,
+				F4BFEE882412B55000A653D2 /* ProductNetworkProvider.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		F4F18097241069760044C59B /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				F4F18098241069A50044C59B /* StoreNetworkProviderTest.swift */,
+				F4745A5224119268003AC983 /* CategoryNetworkProviderTest.swift */,
+				F4BFEE8A2412B8B800A653D2 /* ProductNetworkProviderTest.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
 		F4F4D34E240EF2F50062ADE3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +452,15 @@
 				F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */,
 				F4F4D37B240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */,
 				F4F4D358240EF2F50062ADE3 /* Products */,
+				614D388159BC1046F7159BF2 /* Pods */,
+				8410B8C8A8B2E0DD51C00F5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F4F4D358240EF2F50062ADE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */,
+				F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */,
 				F4F4D36D240EF2F60062ADE3 /* the-agile-monkeys-challengeTests.xctest */,
 				F4F4D378240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests.xctest */,
 			);
@@ -101,8 +472,11 @@
 			children = (
 				F4F4D35A240EF2F50062ADE3 /* AppDelegate.swift */,
 				F4F4D35C240EF2F50062ADE3 /* SceneDelegate.swift */,
-				F4F4D35E240EF2F50062ADE3 /* ViewController.swift */,
-				F4F4D360240EF2F50062ADE3 /* Main.storyboard */,
+				F44AEBAE240F08A50049B5C3 /* Extensions */,
+				F4DFBD5B2410335C0093B181 /* Provider */,
+				F4DFBD5624102E8D0093B181 /* Models */,
+				F4BFEE8F2412C9FA00A653D2 /* CollectionView */,
+				F44AEBA5240EFFB30049B5C3 /* User Cases */,
 				F4F4D363240EF2F60062ADE3 /* Assets.xcassets */,
 				F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */,
 				F4F4D368240EF2F60062ADE3 /* Info.plist */,
@@ -113,7 +487,8 @@
 		F4F4D370240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4D371240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift */,
+				F4F18097241069760044C59B /* Integration */,
+				F4F4D371240EF2F60062ADE3 /* AgileMonkeysTests.swift */,
 				F4F4D373240EF2F60062ADE3 /* Info.plist */,
 			);
 			path = "the-agile-monkeys-challengeTests";
@@ -122,7 +497,7 @@
 		F4F4D37B240EF2F60062ADE3 /* the-agile-monkeys-challengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4D37C240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift */,
+				F4F4D37C240EF2F60062ADE3 /* AgileMonkeyUITests.swift */,
 				F4F4D37E240EF2F60062ADE3 /* Info.plist */,
 			);
 			path = "the-agile-monkeys-challengeUITests";
@@ -135,9 +510,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4F4D381240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challenge" */;
 			buildPhases = (
+				0F60FF105103292CDBFBFCC9 /* [CP] Check Pods Manifest.lock */,
 				F4F4D353240EF2F50062ADE3 /* Sources */,
 				F4F4D354240EF2F50062ADE3 /* Frameworks */,
 				F4F4D355240EF2F50062ADE3 /* Resources */,
+				96F02EDF42B6E1A43DC1C491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,13 +522,14 @@
 			);
 			name = "the-agile-monkeys-challenge";
 			productName = "the-agile-monkeys-challenge";
-			productReference = F4F4D357240EF2F50062ADE3 /* the-agile-monkeys-challenge.app */;
+			productReference = F4F4D357240EF2F50062ADE3 /* Agile Monkeys.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F4F4D36C240EF2F60062ADE3 /* the-agile-monkeys-challengeTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4F4D384240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeTests" */;
 			buildPhases = (
+				3C4E17CFCADEE1EE7DB68E6A /* [CP] Check Pods Manifest.lock */,
 				F4F4D369240EF2F60062ADE3 /* Sources */,
 				F4F4D36A240EF2F60062ADE3 /* Frameworks */,
 				F4F4D36B240EF2F60062ADE3 /* Resources */,
@@ -170,9 +548,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4F4D387240EF2F60062ADE3 /* Build configuration list for PBXNativeTarget "the-agile-monkeys-challengeUITests" */;
 			buildPhases = (
+				3FE79592607338E35DB3BFF1 /* [CP] Check Pods Manifest.lock */,
 				F4F4D374240EF2F60062ADE3 /* Sources */,
 				F4F4D375240EF2F60062ADE3 /* Frameworks */,
 				F4F4D376240EF2F60062ADE3 /* Resources */,
+				E5C9AF20113CE899406D207E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +613,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F4D367240EF2F60062ADE3 /* LaunchScreen.storyboard in Resources */,
+				F44AEBAA240EFFFD0049B5C3 /* FakeSplashView.xib in Resources */,
+				F40C04CE2413F2CB00A4582F /* ProductCell.xib in Resources */,
+				F40C04F524155CD000A4582F /* WishListView.xib in Resources */,
+				F40C04FC24156FA500A4582F /* CartView.xib in Resources */,
+				F40C04D92414F7F000A4582F /* ProductDetailView.xib in Resources */,
+				F40C04AD2413CFAA00A4582F /* ProductView.xib in Resources */,
+				F40C04ED2415386400A4582F /* ProductDetailImage.xib in Resources */,
 				F4F4D364240EF2F60062ADE3 /* Assets.xcassets in Resources */,
-				F4F4D362240EF2F50062ADE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +640,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F60FF105103292CDBFBFCC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-agile-monkeys-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C4E17CFCADEE1EE7DB68E6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-agile-monkeys-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE79592607338E35DB3BFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96F02EDF42B6E1A43DC1C491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge/Pods-the-agile-monkeys-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C9AF20113CE899406D207E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests/Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4F4D353240EF2F50062ADE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F4D35F240EF2F50062ADE3 /* ViewController.swift in Sources */,
+				F40C04D42414ECC500A4582F /* Currency.swift in Sources */,
+				F40C04AC2413CFAA00A4582F /* ProductView.swift in Sources */,
+				F44AEBB6240F103D0049B5C3 /* UserCase.swift in Sources */,
+				F479350E2411B8FF000A0DE3 /* Size.swift in Sources */,
+				F4F1808F241038380044C59B /* APIEndpoint.swift in Sources */,
+				F40C04FB24156FA500A4582F /* CartView.swift in Sources */,
+				F44AEBB0240F08B60049B5C3 /* UIView.swift in Sources */,
+				F40C04B92413D64400A4582F /* BaseViewController.swift in Sources */,
+				F40C04C32413D89B00A4582F /* ProductWireframe.swift in Sources */,
+				F4F1809624103C4D0044C59B /* DataRequest.swift in Sources */,
+				F40C04BD2413D6B800A4582F /* ProductContract.swift in Sources */,
+				F40C04E62415019F00A4582F /* ProductDetailInteractor.swift in Sources */,
+				F40C04DC2414F85B00A4582F /* ProductDetailBuilder.swift in Sources */,
 				F4F4D35B240EF2F50062ADE3 /* AppDelegate.swift in Sources */,
+				F40C04AF2413D55100A4582F /* ProductBuilder.swift in Sources */,
+				F40C04C12413D7A700A4582F /* ProductPresenter.swift in Sources */,
+				F40C04CD2413F2CB00A4582F /* ProductCell.swift in Sources */,
+				F40C04E22415005F00A4582F /* ProductDetailEntity.swift in Sources */,
+				F4DFBD5824102EA80093B181 /* Store.swift in Sources */,
+				F4745A5524119F80003AC983 /* SortBy.swift in Sources */,
+				F4DFBD5E241033830093B181 /* BaseNetworkProvider.swift in Sources */,
+				F40C04BF2413D73F00A4582F /* ProductEntity.swift in Sources */,
+				F4BFEE892412B55000A653D2 /* ProductNetworkProvider.swift in Sources */,
+				F40C04DE2414FF6300A4582F /* ProductDetailContract.swift in Sources */,
+				F4BFEE972412CD7500A653D2 /* ConfigurableCell.swift in Sources */,
+				F40C04E02414FFFE00A4582F /* ProductDeailPresenter.swift in Sources */,
+				F40C04F424155CD000A4582F /* WishListView.swift in Sources */,
+				F47935102411B98A000A0DE3 /* Product.swift in Sources */,
+				F40C04E42415015700A4582F /* ProductDetailWireframe.swift in Sources */,
+				F40C04C52413D8F300A4582F /* Productlnteractor.swift in Sources */,
+				F4BFEE992412CF8C00A653D2 /* UIViewController.swift in Sources */,
+				F40C04D82414F7F000A4582F /* ProductDetailView.swift in Sources */,
+				F4745A5124118D05003AC983 /* CategoryNetworkProvider.swift in Sources */,
+				F4F1809424103BB40044C59B /* StoreNetworkProvider.swift in Sources */,
+				F40C04B52413D60B00A4582F /* BaseInteractor.swift in Sources */,
+				F47935122411BAEF000A0DE3 /* ProductContainer.swift in Sources */,
+				F40C04EC2415386400A4582F /* ProductDetailImage.swift in Sources */,
+				F40C04BB2413D67800A4582F /* BaseWireframe.swift in Sources */,
+				F40C04B72413D62A00A4582F /* BasePresenter.swift in Sources */,
+				F47935162411BB72000A0DE3 /* Filter.swift in Sources */,
+				F44AEBA9240EFFFD0049B5C3 /* FakeSplashView.swift in Sources */,
+				F4DFBD5A241030490093B181 /* StoreView.swift in Sources */,
+				F40C04F0241544FC00A4582F /* MainTabBarView.swift in Sources */,
+				F40C04B32413D5E800A4582F /* BaseEntity.swift in Sources */,
 				F4F4D35D240EF2F50062ADE3 /* SceneDelegate.swift in Sources */,
+				F47935142411BB3F000A0DE3 /* Option.swift in Sources */,
+				F4745A4F24118C57003AC983 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +802,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F4D372240EF2F60062ADE3 /* the_agile_monkeys_challengeTests.swift in Sources */,
+				F4F4D372240EF2F60062ADE3 /* AgileMonkeysTests.swift in Sources */,
+				F4745A5324119268003AC983 /* CategoryNetworkProviderTest.swift in Sources */,
+				F4BFEE8B2412B8B800A653D2 /* ProductNetworkProviderTest.swift in Sources */,
+				F4F18099241069A50044C59B /* StoreNetworkProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +813,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F4D37D240EF2F60062ADE3 /* the_agile_monkeys_challengeUITests.swift in Sources */,
+				F4F4D37D240EF2F60062ADE3 /* AgileMonkeyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +833,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4F4D360240EF2F50062ADE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4F4D361240EF2F50062ADE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4F4D365240EF2F60062ADE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +960,7 @@
 		};
 		F4F4D382240EF2F60062ADE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DCB4C799F6ADFF3A138F75 /* Pods-the-agile-monkeys-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,7 +971,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Agile Monkeys";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +979,7 @@
 		};
 		F4F4D383240EF2F60062ADE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB8AF32C59109740D449853 /* Pods-the-agile-monkeys-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,7 +990,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ckwanted.the-agile-monkeys-challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Agile Monkeys";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +998,7 @@
 		};
 		F4F4D385240EF2F60062ADE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6116862468027168825AD5DD /* Pods-the-agile-monkeys-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,12 +1015,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-agile-monkeys-challenge.app/the-agile-monkeys-challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Agile Monkeys.app/Agile Monkeys";
 			};
 			name = Debug;
 		};
 		F4F4D386240EF2F60062ADE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5E6255608A35A8A2A1A49D /* Pods-the-agile-monkeys-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,12 +1038,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-agile-monkeys-challenge.app/the-agile-monkeys-challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Agile Monkeys.app/Agile Monkeys";
 			};
 			name = Release;
 		};
 		F4F4D388240EF2F60062ADE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC0A445ACE516FA02ED1200 /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +1065,7 @@
 		};
 		F4F4D389240EF2F60062ADE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85597A8C71A888B863B1031A /* Pods-the-agile-monkeys-challenge-the-agile-monkeys-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
