@@ -7,6 +7,8 @@ target 'the-agile-monkeys-challenge' do
 
   # Pods for the-agile-monkeys-challenge
   pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'NVActivityIndicatorView'
 
   target 'the-agile-monkeys-challengeTests' do
     inherit! :search_paths

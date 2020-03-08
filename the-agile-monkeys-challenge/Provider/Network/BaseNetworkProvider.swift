@@ -14,7 +14,7 @@ typealias NetworkCompletion<T> = (Swift.Result<T, Error>) -> Void
 class BaseNetworkProvider {
     
     #if DEBUG
-        private let kDebugNetworking: Bool = true
+        private let kDebugNetworking: Bool = false
     #else
         private let kDebugNetworking: Bool = false
     #endif
