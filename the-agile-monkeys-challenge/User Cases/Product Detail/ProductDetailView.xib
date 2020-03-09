@@ -13,6 +13,7 @@
                 <outlet property="descriptionLabel" destination="1bs-0P-KNJ" id="k7T-TO-cDF"/>
                 <outlet property="nameLabel" destination="CJW-6P-Y5H" id="j0X-lu-KCW"/>
                 <outlet property="pageControl" destination="2IY-kK-aEa" id="cjW-Rk-0aJ"/>
+                <outlet property="priceLabel" destination="MnM-iK-Sb7" id="wuL-Oa-m5t"/>
                 <outlet property="scrollView" destination="k4P-Kx-Yhg" id="jd6-qh-hs8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,11 +54,20 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnM-iK-Sb7">
+                                    <rect key="frame" x="20" y="442.5" width="374" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="MnM-iK-Sb7" firstAttribute="leading" secondItem="1bs-0P-KNJ" secondAttribute="leading" id="0n7-sw-4br"/>
                                 <constraint firstItem="1bs-0P-KNJ" firstAttribute="top" secondItem="CJW-6P-Y5H" secondAttribute="bottom" constant="20" id="4I7-bh-K8u"/>
                                 <constraint firstAttribute="trailing" secondItem="CJW-6P-Y5H" secondAttribute="trailing" constant="20" id="7eC-OT-63z"/>
+                                <constraint firstItem="MnM-iK-Sb7" firstAttribute="trailing" secondItem="1bs-0P-KNJ" secondAttribute="trailing" id="B1f-iT-abo"/>
+                                <constraint firstItem="MnM-iK-Sb7" firstAttribute="top" secondItem="1bs-0P-KNJ" secondAttribute="bottom" constant="20" id="EV9-yL-BGX"/>
                                 <constraint firstItem="2IY-kK-aEa" firstAttribute="top" secondItem="ing-gy-0lj" secondAttribute="bottom" constant="-40" id="Fgb-Iw-3jv"/>
                                 <constraint firstItem="ing-gy-0lj" firstAttribute="height" secondItem="4Ch-nM-RD2" secondAttribute="height" multiplier="0.4" id="IdN-rk-Lob"/>
                                 <constraint firstItem="CJW-6P-Y5H" firstAttribute="leading" secondItem="4Ch-nM-RD2" secondAttribute="leading" constant="20" id="RQj-bx-hUm"/>

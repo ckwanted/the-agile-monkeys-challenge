@@ -19,6 +19,7 @@ class ProductDetailView: BaseViewController, ProductDetailViewContract {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     // MARK: - Vars
     private var product: Product? {
@@ -40,6 +41,9 @@ class ProductDetailView: BaseViewController, ProductDetailViewContract {
         
         self.nameLabel.text = self.product?.name
         self.descriptionLabel.text = self.product?.description
+        
+        self.priceLabel.text = product?.getPriceWithCurrency()
+        
     }
     
     private func setupCollectionView() {
@@ -75,9 +79,9 @@ extension ProductDetailView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductDetailImage.identifier, for: indexPath)
         
-//        if let productCell = cell as? ProductDetailImage {
-//            productCell.configure(data: self.dataSource[indexPath.row])
-//        }
+        if let productCell = cell as? ProductDetailImage {
+            productCell.configure(data: self.product?.images?[indexPath.row])
+        }
     
         return cell
     }
