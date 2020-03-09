@@ -39,7 +39,8 @@ class ProductDetailPresenter: BasePresenter, ProductDetailPresenterContract {
     }
     
     func addToCart(product: Product) {
-        self.interactor?.addToCart(product: product)
+        self.wireframe?.showAlert(message: "Coming soon")
+//        self.interactor?.addToCart(product: product)
     }
     
 }

@@ -36,4 +36,6 @@ protocol ProductDetailPresenterContract {
 protocol ProductDetailWireframeContract {
     var presenter: ProductDetailPresenter? { get set }
     var view: ProductDetailView? { get set }
+    
+    func showAlert(message: String)
 }
