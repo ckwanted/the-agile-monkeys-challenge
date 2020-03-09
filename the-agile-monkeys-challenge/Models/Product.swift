@@ -47,4 +47,13 @@ struct Product: Codable {
         return URL(string: self.images?.first ?? "")
     }
     
+    func getPriceWithCurrency() -> String? {
+        
+        if let price = self.finalPrice, let currencyString = self.currency, let currency = Currency(rawValue: currencyString) {
+            return "\(price / 100) \(currency.symbol)"
+        }
+        
+        return nil
+    }
+    
 }

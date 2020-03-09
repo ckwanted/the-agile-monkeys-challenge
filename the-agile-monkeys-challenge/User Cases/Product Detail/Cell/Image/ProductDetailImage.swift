@@ -16,7 +16,7 @@ class ProductDetailImage: UICollectionViewCell, ConfigurableCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.imageView.backgroundColor = .init(white: 0.9, alpha: 1)
+        self.imageView.backgroundColor = .init(white: 0.3, alpha: 1)
     }
     
     @IBOutlet weak var imageView: UIImageView!

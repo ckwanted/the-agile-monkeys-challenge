@@ -9,10 +9,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailView" customModule="Agile_Monkeys" customModuleProvider="target">
             <connections>
+                <outlet property="addToCartButton" destination="430-aA-iTs" id="Hup-9x-21G"/>
+                <outlet property="addToWishListButton" destination="4HX-MW-qYU" id="wVY-5c-T2e"/>
                 <outlet property="collectionView" destination="ing-gy-0lj" id="cpY-gS-ZyW"/>
                 <outlet property="descriptionLabel" destination="1bs-0P-KNJ" id="k7T-TO-cDF"/>
                 <outlet property="nameLabel" destination="CJW-6P-Y5H" id="j0X-lu-KCW"/>
                 <outlet property="pageControl" destination="2IY-kK-aEa" id="cjW-Rk-0aJ"/>
+                <outlet property="priceLabel" destination="MnM-iK-Sb7" id="wuL-Oa-m5t"/>
                 <outlet property="scrollView" destination="k4P-Kx-Yhg" id="jd6-qh-hs8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,30 +56,65 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnM-iK-Sb7">
+                                    <rect key="frame" x="20" y="442.5" width="374" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-MW-qYU">
+                                    <rect key="frame" x="20" y="483.5" width="374" height="30"/>
+                                    <state key="normal" title="_add_to_wish_list"/>
+                                    <connections>
+                                        <action selector="handleAddToWishList:" destination="-1" eventType="touchUpInside" id="YDS-FD-DZq"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="MnM-iK-Sb7" firstAttribute="leading" secondItem="1bs-0P-KNJ" secondAttribute="leading" id="0n7-sw-4br"/>
                                 <constraint firstItem="1bs-0P-KNJ" firstAttribute="top" secondItem="CJW-6P-Y5H" secondAttribute="bottom" constant="20" id="4I7-bh-K8u"/>
                                 <constraint firstAttribute="trailing" secondItem="CJW-6P-Y5H" secondAttribute="trailing" constant="20" id="7eC-OT-63z"/>
+                                <constraint firstItem="MnM-iK-Sb7" firstAttribute="trailing" secondItem="1bs-0P-KNJ" secondAttribute="trailing" id="B1f-iT-abo"/>
+                                <constraint firstItem="MnM-iK-Sb7" firstAttribute="top" secondItem="1bs-0P-KNJ" secondAttribute="bottom" constant="20" id="EV9-yL-BGX"/>
                                 <constraint firstItem="2IY-kK-aEa" firstAttribute="top" secondItem="ing-gy-0lj" secondAttribute="bottom" constant="-40" id="Fgb-Iw-3jv"/>
                                 <constraint firstItem="ing-gy-0lj" firstAttribute="height" secondItem="4Ch-nM-RD2" secondAttribute="height" multiplier="0.4" id="IdN-rk-Lob"/>
                                 <constraint firstItem="CJW-6P-Y5H" firstAttribute="leading" secondItem="4Ch-nM-RD2" secondAttribute="leading" constant="20" id="RQj-bx-hUm"/>
+                                <constraint firstItem="4HX-MW-qYU" firstAttribute="trailing" secondItem="MnM-iK-Sb7" secondAttribute="trailing" id="Sgk-RG-rGB"/>
                                 <constraint firstAttribute="trailing" secondItem="2IY-kK-aEa" secondAttribute="trailing" constant="20" id="Utr-Pg-39w"/>
                                 <constraint firstItem="ing-gy-0lj" firstAttribute="top" secondItem="4Ch-nM-RD2" secondAttribute="top" id="YlV-0B-5ah"/>
+                                <constraint firstItem="4HX-MW-qYU" firstAttribute="top" secondItem="MnM-iK-Sb7" secondAttribute="bottom" constant="20" id="dHY-73-u2C"/>
                                 <constraint firstItem="1bs-0P-KNJ" firstAttribute="trailing" secondItem="CJW-6P-Y5H" secondAttribute="trailing" id="fXS-mp-3OW"/>
                                 <constraint firstItem="ing-gy-0lj" firstAttribute="leading" secondItem="4Ch-nM-RD2" secondAttribute="leading" id="gtr-6C-Pa8"/>
+                                <constraint firstItem="4HX-MW-qYU" firstAttribute="leading" secondItem="MnM-iK-Sb7" secondAttribute="leading" id="jqM-zj-ATC"/>
                                 <constraint firstAttribute="trailing" secondItem="ing-gy-0lj" secondAttribute="trailing" id="oOz-2P-NR4"/>
                                 <constraint firstItem="CJW-6P-Y5H" firstAttribute="top" secondItem="ing-gy-0lj" secondAttribute="bottom" constant="28.5" id="r3L-TH-a6M"/>
                                 <constraint firstItem="2IY-kK-aEa" firstAttribute="leading" secondItem="4Ch-nM-RD2" secondAttribute="leading" constant="20" id="uVb-cF-r7b"/>
                                 <constraint firstItem="1bs-0P-KNJ" firstAttribute="leading" secondItem="CJW-6P-Y5H" secondAttribute="leading" id="w9J-aX-SCs"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="430-aA-iTs">
+                            <rect key="frame" x="20" y="748" width="374" height="50"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="XRg-6X-lAU"/>
+                            </constraints>
+                            <state key="normal" title="_add_to_cart">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="handleAddToCart:" destination="-1" eventType="touchUpInside" id="DBq-Md-glC"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstItem="4Ch-nM-RD2" firstAttribute="centerX" secondItem="k4P-Kx-Yhg" secondAttribute="centerX" id="Fi8-WA-a0B"/>
+                        <constraint firstAttribute="trailing" secondItem="430-aA-iTs" secondAttribute="trailing" constant="20" id="OPJ-cG-Su8"/>
+                        <constraint firstItem="430-aA-iTs" firstAttribute="leading" secondItem="k4P-Kx-Yhg" secondAttribute="leading" constant="20" id="PLk-vI-443"/>
                         <constraint firstAttribute="trailing" secondItem="4Ch-nM-RD2" secondAttribute="trailing" id="YGF-mb-Zrx"/>
                         <constraint firstItem="4Ch-nM-RD2" firstAttribute="centerY" secondItem="k4P-Kx-Yhg" secondAttribute="centerY" id="a82-HS-EHA"/>
                         <constraint firstAttribute="bottom" secondItem="4Ch-nM-RD2" secondAttribute="bottom" id="fJB-W8-27F"/>
+                        <constraint firstAttribute="bottom" secondItem="430-aA-iTs" secondAttribute="bottom" constant="20" id="iuo-sY-UUs"/>
                         <constraint firstItem="4Ch-nM-RD2" firstAttribute="leading" secondItem="k4P-Kx-Yhg" secondAttribute="leading" id="mrs-dD-Ma9"/>
                         <constraint firstItem="4Ch-nM-RD2" firstAttribute="width" secondItem="k4P-Kx-Yhg" secondAttribute="width" id="oZy-ei-Cf8"/>
                         <constraint firstItem="4Ch-nM-RD2" firstAttribute="height" secondItem="k4P-Kx-Yhg" secondAttribute="height" id="rae-4z-6mk"/>

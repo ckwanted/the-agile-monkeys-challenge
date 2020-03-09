@@ -6,7 +6,7 @@
 //  Copyright © 2020 Mario Peñate Fariñas. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ProductDetailWireframe: BaseWireframe, ProductDetailWireframeContract {
     
@@ -14,5 +14,12 @@ class ProductDetailWireframe: BaseWireframe, ProductDetailWireframeContract {
     var view: ProductDetailView?
     
     // MARK: - Contract
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: nil, message: "Coming soon", preferredStyle: .alert)
+        let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(actionOk)
+        
+        self.view?.present(alert, animated: true)
+    }
     
 }
