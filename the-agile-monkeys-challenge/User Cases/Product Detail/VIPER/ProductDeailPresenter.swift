@@ -25,4 +25,21 @@ class ProductDetailPresenter: BasePresenter, ProductDetailPresenterContract {
         return self.entity?.product
     }
     
+    func addToWishList(product: Product) {
+        self.interactor?.addToWishList(product: product)
+    }
+    
+    func isAddedInWishList(product: Product?, completion: @escaping (Bool) -> Void) {
+        guard let product = product else {
+            completion(false)
+            return
+        }
+        
+        completion(self.interactor?.isAddedInWishList(product: product) ?? false)
+    }
+    
+    func addToCart(product: Product) {
+        self.interactor?.addToCart(product: product)
+    }
+    
 }

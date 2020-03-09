@@ -25,7 +25,7 @@ enum UserCase {
         case .productDetail(let product):
             return ProductDetailBuilder.build(product: product)
         case .wishList:
-            let wishListView = WishListView()
+            let wishListView = WishListBuilder.build()
             return UINavigationController(rootViewController: wishListView)
         case .cart:
             let cartView = CartView()

@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.9.1)
   - AlamofireImage (3.6.0):
     - Alamofire (~> 4.9)
+  - Disk (0.6.4)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
@@ -9,19 +10,22 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - Disk
   - NVActivityIndicatorView
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - Disk
     - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
 
-PODFILE CHECKSUM: d83f6af2bcb29aebf086d55ed4bd49dea9932399
+PODFILE CHECKSUM: d022ef0a4b6f19777ed9ffc39b15fbda3a77c86e
 
 COCOAPODS: 1.8.3

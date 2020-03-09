@@ -14,6 +14,10 @@ protocol ProductDetailViewContract {
 
 protocol ProductDetailInteractorContract {
     var presenter: ProductDetailPresenter? { get set }
+    
+    func addToWishList(product: Product)
+    func isAddedInWishList(product: Product) -> Bool
+    func addToCart(product: Product)
 }
 
 protocol ProductDetailPresenterContract {
@@ -24,6 +28,9 @@ protocol ProductDetailPresenterContract {
     
     func setProduct(_ product: Product?)
     func getProduct() -> Product?
+    func addToWishList(product: Product)
+    func isAddedInWishList(product: Product?, completion: @escaping (Bool) -> Void)
+    func addToCart(product: Product)
 }
 
 protocol ProductDetailWireframeContract {
